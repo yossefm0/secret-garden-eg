@@ -1,0 +1,862 @@
+/* --- ملف التنسيق النهائي المطور والمدمج: style.css لمشروع الحديقة السرية --- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+
+    /* 1. لون خلفيتك المفضل ثابت زي ما هو */
+    background-color: #f6e7e7;
+
+    /* 2. الحركة الصايعة: نقش ورد حقيقي ومبهج وموزع عبر الـ SVG البرمجي المباشر */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffb6c1' fill-opacity='0.25'%3E%3Cpath d='M40 20c2-5 7-5 9 0s-1 7-4 9c3 2 9 2 9-1s0-7-5-9c5-2 7 3 5 6s-7 1-9-4c-2 5-7 5-9 0s1-7 4-9c-3-2-9-2-9 1s0 7 5 9c-5 2-7-3-5-6s7-1 9 4z'/%3E%3Ccircle cx='40' cy='20' r='3' fill='%23ff69b4'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 80px 80px;
+    /* حجم الوردة جوه الخلفية */
+
+    /* مسافة تحت لضمان عدم اختفاء المحتوى خلف الفوتر الثابت */
+    padding-bottom: 90px;
+    position: relative;
+}
+
+header {
+    /* درجة البيبي بلو القوية والواضحة التي اخترتها */
+    background-color: #13bdec;
+    /* تغيير لون خط الوصف الفرعي للأبيض ليكون أكثر وضوحاً وتبايناً */
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    /* لون كحلي داكن متناسق جداً ليعطي فخامة لعنوان الحديقة السرية */
+    color: #0b5b73;
+}
+
+nav {
+    /* شريط التنقل باللون الوردي (Pink) المميز */
+    background-color: #FFB6C1;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+}
+
+nav a {
+    color: #4A4A4A;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding: 8px 16px;
+    /* حواف دائرية ناعمة تليق بالألوان الجديدة */
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+/* تأثير الهوفر عند الوقوف على روابط القائمة */
+nav a:hover {
+    color: #FFFFFF !important;
+    /* يقلب بنفس درجة البيبي بلو المشرقة التي اخترتها للهيدر */
+    background-color: #13bdec;
+    transform: translateY(-3px);
+}
+
+/* زر الصفحة النشطة (Active) */
+nav a.active {
+    color: #FFFFFF !important;
+    background-color: #FF69B4;
+    /* لون بنك صارخ ومميز للتمييز */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+/* --- القائمة المنسدلة (Dropdown) --- */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute !important;
+    background: linear-gradient(145deg, #ffffff, #fffcfd) !important;
+
+    /* 📱 تحجيم العرض عشان القائمة تلم نفسها جوة شاشة الموبايل */
+    min-width: 240px;
+    max-width: 280px;
+
+    /* 🌟 التعديل السحري: نقلب الاتجاه يبدأ من الشمال عشان ما تخرجش برة الشاشة وتزقها */
+    right: auto !important;
+    left: 0 !important;
+
+    z-index: 999999 !important;
+    /* رفعنا الرقم لأعلى درجة عشان تفرش فوق أي حاجة */
+    border-radius: 16px;
+    top: 100%;
+    padding: 10px 6px !important;
+
+    /* تظبيط السكرول الداخلي للأصناف */
+    max-height: 240px !important;
+    overflow-y: auto !important;
+    scrollbar-width: thin !important;
+
+    /* أنيميشن الانسيابية عند الظهور */
+    animation: fadeInSlide 0.2s ease-out !important;
+    border: 2px solid #fff0f5 !important;
+    box-shadow: 0px 10px 25px rgba(19, 189, 236, 0.15) !important;
+}
+
+/* ✨ أنيميشن الانسيابية عند الظهور */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔒 تأمين فتح القائمة في الموبايل لما يضغط على كلمة الأصناف */
+.dropdown.open .dropdown-content {
+    display: block !important;
+}
+
+/* 🎀 تظبيط شكل شريط السكرول الداخلي باللون البنك المزهزه */
+.dropdown-content::-webkit-scrollbar {
+    width: 5px !important;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #ff1493 !important;
+    border-radius: 10px !important;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px !important;
+    color: #555555 !important;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 4px !important;
+
+    /* ديكور تقليدي: خطوط خفيفة تفصل الأصناف وإطار جانبي مخفي للتفاعل */
+    border-bottom: 1px dashed #f5f5f5 !important;
+    border-right: 3px solid transparent !important;
+
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* 👑 السحر المشترك: الماوس (:hover) والتاتش (.touch-active) سوا */
+.dropdown-content a:hover,
+.dropdown-content a.touch-active {
+    background-color: #fff0f5 !important;
+    color: #ff1493 !important;
+
+    /* الديكور التقليدي الفاخر: بروز إطار جانبي ذهبي ملكي يعبر عن الهدايا */
+    border-right-color: #ffd700 !important;
+    border-bottom-color: transparent !important;
+
+    /* زحزحة انسيابية للشمال وتوسيع المسافة سنة لجوة مع تاتش صايع */
+    transform: translateX(-5px);
+    padding-right: 22px !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 10px rgba(255, 20, 147, 0.08) !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- الحاويات والمحتوى (Content) --- */
+.content {
+    padding: 30px;
+    background-color: #FFFFFF;
+    margin: 25px auto;
+    max-width: 950px;
+    border-radius: 20px;
+    /* تم تعديل لون الظل ليصبح بيبي بلو ناعم جداً ليتماشى مع بياض الصفحة */
+    box-shadow: 0 8px 24px rgba(19, 189, 236, 0.08);
+    animation: fadeIn 0.8s ease-out;
+}
+
+h2,
+h3 {
+    color: #0b5b73;
+    /* الخط الجانبي يتماشى مع البنك المميز */
+    border-right: 4px solid #FF69B4;
+    padding-right: 12px;
+}
+
+/* --- كروت المنتجات (تم دمج التعديلات القياسية هنا لفرد القوالب) --- */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    /* يمنع التمدد العشوائي في الشاشات الكبيرة */
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    /* حدود ناعمة بلون أزرق خفيف جداً لتحديد الكارت فوق الخلفية البيضاء */
+    border: 1px solid #e1f5fe;
+    /* تم تحسين الظل ليعطي نفس إحساس قالب شركة الحامد المريح */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* التوزيع المرن لضمان ثبات القالب في حالة غياب الصورة */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: #FFB6C1;
+    /* توهج وردي ناعم عند الوقوف على كارت المنتج */
+    box-shadow: 0 12px 24px rgba(255, 182, 193, 0.3);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    /* تحويلها إلى contain لضمان ظهور البضاعة كاملة ومسطرة داخل القالب المخصص لها */
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    background-color: #fafafa;
+    /* خلفية افتراضية ناعمة تحمي هيكل القالب لو الصورة مكسورة */
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+/* --- الأزرار (Buttons) --- */
+.submit-btn {
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+}
+
+.submit-btn:hover {
+    /* يقلب لدرجة الأزرق الداكنة المتناسقة مع الهيدر عند الهوفر */
+    background-color: #0b5b73;
+    box-shadow: 0 6px 14px rgba(11, 91, 115, 0.3);
+    transform: translateY(-2px);
+}
+
+.order-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    /* زر الطلب متناسق تماماً مع درجة البيبي بلو التي اخترتها */
+    background-color: #13bdec;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #FF69B4;
+    /* يقلب بنك عند الوقوف عليه لتفاعل مبهج */
+    transform: scale(1.05);
+}
+
+/* --- الفوتر (Footer) --- */
+footer {
+    /* لون رمادي مزرق داكن يضمن وضوح الصورة الشخصية والنصوص البيضاء */
+    background-color: #0b5b73;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --- المودال (Modal) --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 85%;
+    max-width: 650px;
+    border-radius: 15px;
+    animation: zoom 0.5s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- التجاوب مع الموبايل (Responsive) --- */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem !important;
+    }
+
+    nav {
+        position: relative !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 6px !important;
+    }
+
+    nav a {
+        flex: 0 0 45% !important;
+        padding: 8px 5px !important;
+        font-size: 0.85rem !important;
+        text-align: center !important;
+    }
+
+    .product-card {
+        width: 95% !important;
+        margin: 0 auto;
+    }
+}
+
+
+/* --- إعادة ضبط الروابط الرئيسية فقط في شريط التنقل --- */
+nav>a {
+    color: #4A4A4A;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+/* تأثير الهوفر على الزراير الرئيسية الثلاثة فقط */
+nav>a:hover {
+    color: #FFFFFF !important;
+    background-color: #13bdec;
+    transform: translateY(-3px);
+}
+
+/* زر الصفحة النشطة (Active) يرجع يشتغل وينور بالبنك الصارخ */
+nav>a.active {
+    color: #FFFFFF !important;
+    background-color: #FF69B4 !important;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5) !important;
+}
+
+/* --- ضبط القائمة المنسدلة (Dropdown) عشان متضربش الـ Active --- */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* زرار اتصل بنا الرئيسي */
+.dropdown>a {
+    color: #4A4A4A;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.dropdown:hover>a {
+    color: #FFFFFF !important;
+    background-color: #13bdec;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(19, 189, 236, 0.15);
+    z-index: 1;
+    border-radius: 12px;
+    top: 100%;
+    right: 0;
+    padding: 5px;
+}
+
+/* روابط السوشيال ميديا الداخلية (منفصلة تماماً دلوقتي عن الزراير الكبيرة) */
+.dropdown-content a {
+    display: flex !important;
+    align-items: center;
+    padding: 12px 15px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border-radius: 8px !important;
+    margin-bottom: 2px !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    background: none !important;
+    transform: none !important;
+    width: auto !important;
+}
+
+/* --- ألوان الهوفر الرسمية لزراير اتصل بنا الفرعية --- */
+.dropdown-content a.nav-whatsapp {
+    color: #25D366 !important;
+}
+
+.dropdown-content a.nav-whatsapp:hover {
+    background-color: #25D366 !important;
+    color: #FFFFFF !important;
+}
+
+.dropdown-content a.nav-facebook {
+    color: #1877F2 !important;
+}
+
+.dropdown-content a.nav-facebook:hover {
+    background-color: #1877F2 !important;
+    color: #FFFFFF !important;
+}
+
+.dropdown-content a.nav-instagram {
+    color: #E1306C !important;
+}
+
+.dropdown-content a.nav-instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+    color: #FFFFFF !important;
+}
+
+.dropdown-content a i {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover i {
+    color: #FFFFFF !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.product-price-box .discount-badge {
+    background-color: #FF69B4;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: line-through;
+    /* الخط المشطوب جوه الكلمة */
+}
+
+
+
+
+/* السعر القديم المشطوب (قبل الخصم) */
+.product-price-box .old-price {
+    font-size: 14px;
+    color: #999999;
+    text-decoration: line-through;
+    /* الخط المشطوب اللي بالمسطرة */
+}
+
+/* السعر الجديد (بعد الخصم) منور وواضح */
+.product-price-box .new-price {
+    font-size: 18px;
+    color: #0b5b73;
+    font-weight: bold;
+}
+
+
+
+
+/* الحاوية الأساسية للسلايدر لمنع خروج الأسهم */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* شريط الصور الأفقي السريع */
+.product-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* إخفاء شريط التمرير (Scrollbar) المزعج تحت الصور */
+.product-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* ضبط مقاس كل صورة لتملأ الكارت بالكامل عند التقليب */
+.product-slider img {
+    min-width: 100% !important;
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain !important;
+    scroll-snap-align: start;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+/* أزرار الأسهم الصايعة (يمين وشمال) */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(11, 91, 115, 0.7);
+    /* لون كحلي شفاف */
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background-color: #FF69B4;
+    /* يقلب بنك صارخ عند الهوفر */
+    scale: 1.1;
+}
+
+.prev-btn {
+    right: 8px;
+}
+
+/* سهم اليمين في العربي */
+.next-btn {
+    left: 8px;
+}
+
+/* سهم الشمال في العربي */
+
+
+
+
+
+/* ================================================================= */
+/* 🎀 تنسيق عناصر قائمة الأصناف المنسدلة (تأثير كروت المنتجات) */
+/* ================================================================= */
+
+/* تظبيط شكل القائمة المنسدلة نفسها وتوسيعها سنة */
+.dropdown-content {
+    min-width: 240px !important;
+    padding: 10px !important;
+    border-radius: 12px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* التنسيق الافتراضي لكل صنف جوه القائمة */
+.dropdown-content a {
+    color: #333333 !important;
+    padding: 12px 16px !important;
+    margin: 6px 0 !important;
+    /* مسافة بين الأصناف عشان تبرز كأنها كروت صغيرة */
+    border-radius: 8px !important;
+    border: 2px solid transparent !important;
+    /* إطار شفاف في العادي عشان ما يرحلش الكتابة لما يظهر */
+    transition: all 0.25s ease-in-out !important;
+    text-align: right !important;
+    display: block !important;
+}
+
+/* ✨ السحر: التأثير البارز والـ Shadow والبامبي المزهزه عند الوقوف بالماوس (Hover) */
+.dropdown-content a:hover {
+    background-color: #fff0f5 !important;
+    /* خلفية بامبي هادية جداً */
+    color: #ff1493 !important;
+    /* لون الكتابة يقلب بامبي فاقع */
+    border-color: #ff1493 !important;
+    /* إطار بامبي فاقع ومزهزه بالكامل */
+    transform: translateX(-5px);
+    /* حركة زحزحة خفيفة للشمال بتدي إيحاء تفاعلي صايع */
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.25) !important;
+    /* بروز بظل بامبي نفس استايل المنتجات */
+    font-weight: bold !important;
+}
+
+
+
+
+
+/* ================================================================= */
+/* 🟢 تحجيم القائمة المنسدلة وعمل سكرول داخلي ناعم للأصناف */
+/* ================================================================= */
+
+.dropdown-content {
+    display: none !important;
+    /* بتظهر بس لما نقف عليها */
+    position: absolute !important;
+    background-color: #ffffff !important;
+    min-width: 250px !important;
+    /* العرض الطبيعي الملموم */
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08) !important;
+    z-index: 9999 !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+    top: 100%;
+    right: 0;
+
+    /* 🌟 السر هنا: حددنا الطول وفتحنا السكرول الداخلي */
+    max-height: 220px !important;
+    /* طول مناسب جداً يشيل حوالي 4 أصناف والباقي بسكرول */
+    overflow-y: auto !important;
+    /* تشغيل السكرول العمودي تلقائياً */
+    scrollbar-width: thin !important;
+    /* صغرنا حجم شريط السكرول للمتصفحات الحديثة */
+}
+
+/* ✨ تظبيط شكل شريط السكرول عشان يبقى ناعم ومخفي شبه المواقع العالمية */
+.dropdown-content::-webkit-scrollbar {
+    width: 6px !important;
+    /* عرض رفيع جداً للشريط */
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: transparent !important;
+    /* إخفاء أرضية الشريط */
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #ff1493 !important;
+    /* لون السحّاب بامبي مزهزه نفس استايل موقعك */
+    border-radius: 10px !important;
+}
+
+/* تنسيق الروابط جوة السكرول */
+.dropdown-content a {
+    color: #333333 !important;
+    padding: 10px 14px !important;
+    margin: 4px 0 !important;
+    border-radius: 8px !important;
+    border: 2px solid transparent !important;
+    transition: all 0.2s ease-in-out !important;
+    text-align: right !important;
+    display: block !important;
+    white-space: nowrap !important;
+}
+
+/* تأثير الـ Hover البارز جوة السكرول */
+.dropdown-content a:hover {
+    background-color: #fff0f5 !important;
+    color: #ff1493 !important;
+    border-color: #ff1493 !important;
+    transform: translateX(-4px);
+    font-weight: bold !important;
+}
+
+/* إظهار القائمة عند الـ Hover ومنعها تفتح لوحدها */
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+
+
+
+
+
+
+/* ================================================================= */
+/* 🎀 الديكورات والحركات الاحترافية للقائمة المنسدلة */
+/* ================================================================= */
+
+.dropdown-content {
+    display: none !important;
+    position: absolute !important;
+    background: linear-gradient(145deg, #ffffff, #fffcfd) !important;
+    /* تدرج هادي جداً يدي ملمس حريري */
+    min-width: 260px !important;
+    max-height: 250px !important;
+    /* طول محكوم ومثالي */
+    overflow-y: auto !important;
+    z-index: 9999 !important;
+    top: 100%;
+    right: 0;
+    padding: 12px 8px !important;
+
+    /* 🎨 ديكور الإطار التقليدي الناعم */
+    border: 2px solid #fff0f5 !important;
+    border-radius: 16px !important;
+    /* حواف دائرية ناعمة وشيك */
+
+    /* ظل بارز وناعم يدي إيحاء إن القائمة طايرة فوق الصفحة */
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.12) !important;
+
+    /* أنيميشن ناعم أول ما القائمة تفتح */
+    animation: fadeInSlide 0.3s ease-out !important;
+    scrollbar-width: thin !important;
+}
+
+/* ✨ أنيميشن السحب والانسيابية عند الظهور */
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🎀 تظبيط شكل شريط السكرول الديكوري */
+.dropdown-content::-webkit-scrollbar {
+    width: 5px !important;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #ff1493 !important;
+    /* السحاب بامبي مزهزه */
+    border-radius: 10px !important;
+}
+
+/* 🌟 حركات وتنسيق الأصناف بالداخل */
+.dropdown-content a {
+    color: #444444 !important;
+    padding: 10px 16px !important;
+    margin: 5px 4px !important;
+    border-radius: 8px !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    text-align: right !important;
+    display: block !important;
+    white-space: nowrap !important;
+
+    /* ديكور تقليدي: خط رفيع يفصل بين الأصناف بنعومة */
+    border-bottom: 1px dashed #f5f5f5 !important;
+    border-right: 3px solid transparent !important;
+    /* إطار جانبي مخفي وهيبرز في الـ Hover */
+
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    /* حركة فيد ناعمة وسريعة */
+}
+
+/* 👑 السحر كله هنا: لما العميل يقف على الصنف (Hover) */
+.dropdown-content a:hover {
+    background-color: #fff0f5 !important;
+    /* خلفية بامبي هادية */
+    color: #ff1493 !important;
+    /* الخط يقلب بامبي مزهزه */
+
+    /* الديكور التقليدي: بروز إطار جانبي ذهبي ملكي شيك جداً يعبر عن الهدايا */
+    border-right-color: #ffd700 !important;
+    border-bottom-color: transparent !important;
+
+    /* حركة زحزحة خفيفة وناعمة للشمال */
+    transform: translateX(-5px);
+    padding-right: 20px !important;
+    /* زحزحة الكتابة سنة لجوة بتدي تأثير تفاعلي صايع */
+    font-weight: bold !important;
+
+    /* ظل خفيف لكل صنف كأنه كارت منفصل بيترفع */
+    box-shadow: 0 4px 10px rgba(255, 20, 147, 0.08) !important;
+}
+
+/* إظهار القائمة */
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+
+
+
+nav {
+    overflow: visible !important;
+    /* يسمح للقائمة إنها تخرج وتنسدل براحارحتها في الموبايل */
+}
+
+.content,
+.product-container {
+    position: relative !important;
+    z-index: 1 !important;
+    /* بنهبط محتوى الصفحة تحت عشان القائمة تفرش فوقيه مستريحة */
+}
+
+
+
+/* تأثير حركي لزرار العودة لأعلى الصفحة */
+#backToTopBtn:hover {
+    background-color: #0b5b73 !important; /* يقلب للون الأزرق الغامق المتناسق مع الفوتر */
+    transform: scale(1.1); /* يكبر بنسبة بسيطة */
+    opacity: 1;
+}
+

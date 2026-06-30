@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="الحديقة السرية، متجر هدايا، نوتات، تنسيق هدايا، هدايا ">
+    <meta name="author" content="Eng.Yossef Mohamed" />
+    <meta name="description"
+        content="الْحَدِيقَةُ السِّرِّيَّةُ مساحةٌ تنبضُ بالمعاني الجميلة، نؤمن فيها أنَّ الهديةَ ليستْ مجرَّدَ عطاءٍ ماديٍّ، بل رسالةُ محبةٍ وتقديرٍ، وأثرٌ طيبٌ يبقى في القلوب. نُعنى بتقديم هدايا ومبادراتٍ هادفةٍ تُعبِّر عن الامتنان، وتُكرِّم القدوات، وتُعزِّز القيم، وتُسهم في نشر البهجة وإحياء معاني الوفاء والتقدير في المناسبات المختلفة." />
+
+    <!-- 1. اللوجو في تاب المتصفح (Favicon) بالمسار المظبوط -->
+    <link rel="icon" type="image/jpeg" href="images/logo/1.jpg">
+
+    <!-- 2. كروت المعاينة لصفحة توزيعات رمضانية (Open Graph Meta Tags) -->
+    <meta property="og:title" content="توزيعات رمضانية - الحديقة السرية" />
+    <meta property="og:description"
+        content="تشكيلة مميزة ومبهجة من التوزيعات والهدايا الرمضانية المصممة لتبادل المحبة ونشر أجواء الخير والبركة في الشهر الفضيل." />
+    <meta property="og:image" content="images/logo/1.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- 3. ملفات التنسيق والأيقونات -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>توزيعات رمضانية - الحديقة السرية</title>
+</head>
+
+<body>
+
+    <header>
+        <h1> الْحَدِيقَةُ السِّرِّيَّةُ </h1>
+        <p>أَثَرٌ يَبْقَى فِي الْقُلُوبِ</p>
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">من منتجاتنا</a>
+
+        <div class="dropdown">
+            <a href="#" class="active">الأصناف <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="package.html">باكيدج</a>
+                <a href="hijab-party.html"> توزيعات حفل حجاب</a>
+                <a href="teacher.html">توزيعات معلم</a>
+                <a href="quran-teacher.html">توزيعات معلم القرآن</a>
+                <a href="back-to-school.html">توزيعات العوده للمدرسه</a>
+                <a href="school-friends.html">توزيعات لأصدقاء المدرسة</a>
+                <a href="students.html">توزيعات للطلاب</a>
+                <a href="sebou.html">توزيعات سبوع</a>
+                <a href="mugs.html">المجات</a>
+                <a href="stationery.html">أدوات مكتبية</a>
+                <a href="ramadan.html">توزيعات رمضانية</a>
+                <a href="eid-fitr.html">توزيعات عيد الفطر</a>
+                <a href="eid-adha.html">توزيعات عيد الأضحى</a>
+            </div>
+        </div>
+
+        <a href="about.html">من نحن</a>
+
+        <div class="dropdown">
+            <a href="#">اتصل بنا <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="https://wa.me/201118647458?text=استفسار" target="_blank" class="nav-whatsapp">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </a>
+                <a href="https://www.facebook.com/share/L6hiGmFAHGzEhfyb/?mibextid=A7sQZp" target="_blank"
+                    class="nav-facebook">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                </a>
+                <a href="https://www.instagram.com/thesecretgarden_50?igsh=aHc4M3ZqeXlzMWlj" target="_blank"
+                    class="nav-instagram">
+                    <i class="fab fa-instagram"></i> إنستجرام
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>توزيعات رمضانية </h2>
+
+        <div class="product-container">
+            <!-- بداية كارت منتج: مج بورسلين مع إمكانية إضافة الاسم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (6 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/porcelain-mug-name/1.jpg"
+                            alt="مج بورسلين مع إمكانية إضافة الاسم زاوية 1" onclick="openModal(this)">
+                        <img src="images/ramadan/porcelain-mug-name/2.jpg"
+                            alt="مج بورسلين مع إمكانية إضافة الاسم زاوية 2" onclick="openModal(this)">
+                        <img src="images/ramadan/porcelain-mug-name/3.jpg"
+                            alt="مج بورسلين مع إمكانية إضافة الاسم زاوية 3" onclick="openModal(this)">
+                        <img src="images/ramadan/porcelain-mug-name/4.jpg"
+                            alt="مج بورسلين مع إمكانية إضافة الاسم زاوية 4" onclick="openModal(this)">
+                        <img src="images/ramadan/porcelain-mug-name/5.jpg"
+                            alt="مج بورسلين مع إمكانية إضافة الاسم زاوية 5" onclick="openModal(this)">
+                        <img src="images/ramadan/porcelain-mug-name/6.jpg"
+                            alt="مج بورسلين مع إمكانية إضافة الاسم زاوية 6" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>مج بورسلين مع إمكانية إضافة الاسم ☕🌙</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">مج بورسلين مع إمكانية إضافة الاسم بسعر 155 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A8%D9%88%D8%B1%D8%B3%D9%84%D9%8A%D9%86%20%D9%85%D8%B9%20%D8%A5%D9%85%D9%83%D8%A7%D9%86%D9%8A%D8%A9%20%D8%A5%D8%B6%D8%A7%D9%81%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مج بورسلين مع إمكانية إضافة الاسم -->
+            <!-- بداية كارت منتج: مفكرة الصغار من 4 لـ 9 سنوات -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (3 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/ramadan-notebook-4-9/1.jpg" alt="مفكرة الصغار من 4 لـ 9 سنوات زاوية 1"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-4-9/2.jpg" alt="مفكرة الصغار من 4 لـ 9 سنوات زاوية 2"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-4-9/3.jpg" alt="مفكرة الصغار من 4 لـ 9 سنوات زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>مفكرة الصغار من 4 لـ 9 سنوات 📖👶</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">مفكرة مميزة وممتعة للأطفال من عمر 4 إلى 9 سنوات بسعر 70 ج.م.
+                </p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">70 ج.م</span>
+                    <span class="new-price">70 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%81%D9%83%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B5%D8%BA%D8%A7%D8%B1%20%D9%85%D9%86%204%20%D9%84%D9%80%209%20%D8%B3%D9%86%D9%88%D8%A7%D8%AA"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مفكرة الصغار من 4 لـ 9 سنوات -->
+            <!-- بداية كارت منتج: مفكرة رمضانية لعمر من 6 لـ 11 سنة -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (3 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/ramadan-notebook-6-11/1.jpg"
+                            alt="مفكرة رمضانية لعمر من 6 لـ 11 سنة زاوية 1" onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-6-11/2.jpg"
+                            alt="مفكرة رمضانية لعمر من 6 لـ 11 سنة زاوية 2" onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-6-11/3.jpg"
+                            alt="مفكرة رمضانية لعمر من 6 لـ 11 سنة زاوية 3" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>مفكرة رمضانية لعمر من 6 لـ 11 سنة 📖🌙</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">مفكرة رمضانية مميزة للأطفال من عمر 6 إلى 11 سنة بسعر 75 ج.م.
+                </p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">75 ج.م</span>
+                    <span class="new-price">75 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%81%D9%83%D8%B1%D8%A9%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%D9%8A%D8%A9%20%D9%84%D8%B9%D9%85%D8%B1%20%D9%85%D9%86%206%20%D9%84%D9%80%2011%20%D8%B3%D9%86%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مفكرة رمضانية لعمر من 6 لـ 11 سنة -->
+            <!-- بداية كارت منتج: مفكرة رمضانية لسن من 8 لـ 14 سنة -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (3 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/ramadan-notebook-8-14/1.jpg"
+                            alt="مفكرة رمضانية لسن من 8 لـ 14 سنة زاوية 1" onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-8-14/2.jpg"
+                            alt="مفكرة رمضانية لسن من 8 لـ 14 سنة زاوية 2" onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-8-14/3.jpg"
+                            alt="مفكرة رمضانية لسن من 8 لـ 14 سنة زاوية 3" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>مفكرة رمضانية لسن من 8 لـ 14 سنة 📖🌙</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">مفكرة رمضانية مميزة للناشئين من عمر 8 إلى 14 سنة بسعر 75 ج.م.
+                </p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">75 ج.م</span>
+                    <span class="new-price">75 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%81%D9%83%D8%B1%D8%A9%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%D9%8A%D8%A9%20%D9%84%D8%B3%D9%86%20%D9%85%D9%86%208%20%D9%84%D9%80%2014%20%D8%B3%D9%86%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مفكرة رمضانية لسن من 8 لـ 14 سنة -->
+            <!-- بداية كارت منتج: ميدالية أذكار الصباح والمساء -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (7 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/athkar-medallion/1.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 1"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/athkar-medallion/2.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 2"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/athkar-medallion/3.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 3"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/athkar-medallion/4.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 4"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/athkar-medallion/5.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 5"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/athkar-medallion/6.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 6"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/athkar-medallion/7.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 7"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>ميدالية أذكار الصباح والمساء 📿✨</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">ميدالية أذكار الصباح والمساء بتصميم مميز بسعر 20 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">20 ج.م</span>
+                    <span class="new-price">20 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%8A%D8%AF%D8%A7%D9%84%D9%8A%D8%A9%20%D8%A3%D8%B0%D9%83%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B5%D8%A8%D8%A7%D8%AD%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: ميدالية أذكار الصباح والمساء -->
+            <!-- بداية كارت منتج: خاتم تسبيح -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (3 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/tasbih-ring/1.jpg" alt="خاتم تسبيح زاوية 1" onclick="openModal(this)">
+                        <img src="images/ramadan/tasbih-ring/2.jpg" alt="خاتم تسبيح زاوية 2" onclick="openModal(this)">
+                        <img src="images/ramadan/tasbih-ring/3.jpg" alt="خاتم تسبيح زاوية 3" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>خاتم تسبيح 📿💍</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">خاتم تسبيح عملي ومميز بسعر 35 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">35 ج.m</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%83%D8%A7%D8%B1%D8%AA%20%D8%AE%D8%A7%D8%AA%D9%85%20%D8%A7%D9%84%D8%AA%D8%B3%D8%A8%D9%8A%D8%AD"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: خاتم تسبيح -->
+            <!-- بداية كارت منتج: نوت بوك رمضان هدية فاغتنم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (3 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/ramadan-notebook-gift/1.jpg" alt="نوت بوك رمضان هدية فاغتنم زاوية 1"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-gift/2.jpg" alt="نوت بوك رمضان هدية فاغتنم زاوية 2"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-notebook-gift/3.jpg" alt="نوت بوك رمضان هدية فاغتنم زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>نوت بوك رمضان هدية فاغتنم 📖🌙</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">نوت بوك رمضان هدية فاغتنم بسعر 40 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">40 ج.م</span>
+                    <span class="new-price">40 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%86%D9%88%D8%AA%20%D8%A8%D9%88%D9%83%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20%D9%87%D8%AF%D9%8A%D8%A9%20%D9%81%D8%A7%D8%BA%D8%AA%D9%86%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: نوت بوك رمضان هدية فاغتنم -->
+            <!-- بداية كارت منتج: مفكرة رمضان إحسان -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (6 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/ramadan-ihsan-notebook/1.jpg" alt="مفكرة رمضان إحسان مقاس A5 زاوية 1"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-ihsan-notebook/2.jpg" alt="مفكرة رمضان إحسان مقاس A5 زاوية 2"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-ihsan-notebook/3.jpg" alt="مفكرة رمضان إحسان مقاس A5 زاوية 3"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-ihsan-notebook/4.jpg" alt="مفكرة رمضان إحسان مقاس A5 زاوية 4"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-ihsan-notebook/5.jpg" alt="مفكرة رمضان إحسان مقاس A5 زاوية 5"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/ramadan-ihsan-notebook/6.jpg" alt="مفكرة رمضان إحسان مقاس A5 زاوية 6"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>مفكرة رمضان إحسان (مقاس A5) 📖🌙</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">مفكرة رمضان إحسان المميزة مقاس A5 بسعر 75 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">75 ج.م</span>
+                    <span class="new-price">75 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%81%D9%83%D8%B1%D8%A9%20%D8%B1%D9%85%D8%B6%D8%A7%D9%86%20%D8%A5%D8%AD%D8%B3%D8%A7%D9%86%20%D9%85%D9%82%D8%A7%D8%B3%20A5"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مفكرة رمضان إحسان -->
+            <!-- بداية كارت منتج: فاصل مصحف -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (3 صور) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img src="images/ramadan/quran-bookmark/1.jpg" alt="فاصل مصحف زاوية 1"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/quran-bookmark/2.jpg" alt="فاصل مصحف زاوية 2"
+                            onclick="openModal(this)">
+                        <img src="images/ramadan/quran-bookmark/3.jpg" alt="فاصل مصحف زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>فاصل مصحف 🔖🌙</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">فاصل مصحف أنيق ومميز بسعر 20 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">20 ج.م</span>
+                    <span class="new-price">20 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%81%D8%A7%D8%B5%D9%84%20%D9%85%D8%B5%D8%AD%D9%81"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: فاصل مصحف -->
+
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgFull">
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="#" class="order-btn" target="_blank" style="text-decoration: none;">
+                <i class="fas fa-shopping-cart"></i> انتقل للطلب فوراً
+            </a>
+        </div>
+    </div>
+
+    <footer style="width: 100%; background-color: #0b5b73; margin: 0; padding: 15px 0; box-sizing: border-box;">
+        <div
+            style="display: flex; align-items: center; justify-content: center; gap: 15px; direction: ltr; width: 100%;">
+            <img src="images/copy/copy.jpg" alt="Eng. Yossef Mohamed" onclick="openModal(this)"
+                style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid white; object-fit: cover; cursor: pointer; flex-shrink: 0;">
+            <p
+                style="margin: 0; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; line-height: 1.4; color: white;">
+                Designed & Developed by <strong>Eng. Yossef Mohamed</strong><br>
+                <span style="font-size: 12px; color: #eee;">Copyright © 2026</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 1️⃣ دالة السلايدر الذكي مع اللف اللانهائي (Infinity Loop) المتوافقة مع العربي
+        function moveSlider(button, direction) {
+            const slider = button.parentElement.querySelector('.product-slider');
+            const images = slider.querySelectorAll('img');
+            const totalImages = images.length;
+            const scrollAmount = slider.clientWidth;
+
+            let currentIndex = Math.round(Math.abs(slider.scrollLeft) / scrollAmount);
+
+            if (direction === -1) {
+                currentIndex++;
+            } else {
+                currentIndex--;
+            }
+
+            if (currentIndex >= totalImages) {
+                slider.scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            } else if (currentIndex < 0) {
+                slider.scrollTo({
+                    left: -scrollAmount * (totalImages - 1),
+                    behavior: 'smooth'
+                });
+            } else {
+                slider.scrollTo({
+                    left: -scrollAmount * currentIndex,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // 2️⃣ دالة فتح المودال وتكبير الصورة (تم تعديلها لحمايتك من البيع الفوري 😂)
+        function openModal(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("imgFull");
+
+            modal.style.display = "block";
+            modalImg.src = element.src;
+
+            // بنلقط زرار الانتقال اللي جوه المودال الكبيرة
+            const modalOrderBtn = document.querySelector('#imageModal .order-btn') || document.querySelector('#imageModal a');
+
+            // بنشيك: هل الصورة المفتوحة دي موجودة جوه كارت منتج؟
+            const productCard = element.closest('.product-card');
+
+            if (productCard && modalOrderBtn) {
+                // لو صورة منتج: بنلقط زرار الواتساب المشفر ونظهره فوراً
+                const originalOrderBtn = productCard.querySelector('.order-btn');
+                if (originalOrderBtn) {
+                    modalOrderBtn.href = originalOrderBtn.href;
+                    modalOrderBtn.style.display = "inline-block"; // إظهار الزرار للمنتجات
+                }
+            } else if (modalOrderBtn) {
+                // 🔒 حماية البشمهندس: لو صورتك أنت اللي فتحت (برة الكروت)، اخفي الزرار تماماً!
+                modalOrderBtn.style.display = "none";
+            }
+        }
+
+        // 3️⃣ دالة إغلاق المودال بالزرار الخاص به (X)
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        // 4️⃣ إغلاق المودال تلقائياً لو العميل داس في أي حتة فاضية برا الصورة
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // 📱 5️⃣ سكريبت التاتش والموبايل الذكي لفتح القائمة وتشغيل الحركات باللمس
+        document.querySelectorAll('.dropdown-content a').forEach(link => {
+            // أول ما صباعه يلمس الشاشة
+            link.addEventListener('touchstart', function () {
+                this.classList.add('touch-active');
+            });
+
+            // أول ما صباعه يترفع أو يتحرك بالسكرول شيل الحركة بنعومة
+            link.addEventListener('touchend', function () {
+                setTimeout(() => {
+                    this.classList.remove('touch-active');
+                }, 150); // تأخير بسيط عشان عينه تلمح الحركة الذهبية
+            });
+        });
+
+        // حركة صايعة: لو داس على كلمة "الأصناف" نفسها في الموبايل تفتح وتقفل القائمة بسلاسة
+        const dropdownLink = document.querySelector('.dropdown > a');
+        if (dropdownLink) {
+            dropdownLink.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) { // شاشات الموبايل والتابلت بس
+                    e.preventDefault(); // نمنع اللينك يرفع الصفحة لفوق
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        }
+
+        // لو داس في أي حتة فاضية برة القائمة يقفلها فوراً في الموبايل
+        window.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+            }
+        });
+    </script>
+    <!-- زرار العودة لأعلى الصفحة (مترحل لليمين ومرفوع فوق الفوتر والواتساب) -->
+    <button id="backToTopBtn" onclick="scrollToTop()" title="العودة لأعلى الصفحة"
+        style="display: none; position: fixed; bottom: 95px; right: 25px; z-index: 9999; border: none; outline: none; background-color: #0b5b73; color: white; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease; opacity: 0.85;">
+        ▲
+    </button>
+
+    <script>
+        const topBtn = document.getElementById("backToTopBtn");
+
+        function handleScroll() {
+            if (window.pageYOffset > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.style.display = "block";
+                setTimeout(() => {
+                    topBtn.style.opacity = "0.85";
+                    topBtn.style.transform = "translateY(0)";
+                }, 10);
+            } else {
+                topBtn.style.opacity = "0";
+                topBtn.style.transform = "translateY(10px)";
+                setTimeout(() => {
+                    if (window.pageYOffset <= 300) topBtn.style.display = "none";
+                }, 300);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('touchmove', handleScroll, { passive: true });
+        window.addEventListener('wheel', handleScroll, { passive: true });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        topBtn.onmouseover = function () {
+            this.style.backgroundColor = "#ff1493";
+            this.style.transform = "scale(1.1)";
+            this.style.opacity = "1";
+        }
+        topBtn.onmouseout = function () {
+            this.style.backgroundColor = "#0b5b73";
+            this.style.transform = "scale(1)";
+            this.style.opacity = "0.85";
+        }
+    </script>
+</body>
+
+</html>

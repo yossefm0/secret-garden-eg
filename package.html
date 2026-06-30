@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="الحديقة السرية، متجر هدايا، نوتات، تنسيق هدايا، هدايا ">
+    <meta name="author" content="Eng.Yossef Mohamed" />
+    <meta name="description"
+        content="الْحَدِيقَةُ السِّرِّيَّةُ مساحةٌ تنبضُ بالمعاني الجميلة، نؤمن فيها أنَّ الهديةَ ليستْ مجرَّدَ عطاءٍ ماديٍّ، بل رسالةُ محبةٍ وتقديرٍ، وأثرٌ طيبٌ يبقى في القلوب. نُعنى بتقديم هدايا ومبادراتٍ هادفةٍ تُعبِّر عن الامتنان، وتُكرِّم القدوات، وتُعزِّز القيم، وتُسهم في نشر البهجة وإحياء معاني الوفاء والتقدير في المناسبات المختلفة." />
+
+    <!-- 1. اللوجو في تاب المتصفح (Favicon) بالمسار المظبوط -->
+    <link rel="icon" type="image/jpeg" href="images/logo/1.jpg">
+
+    <!-- 2. كروت المعاينة لصفحة الباكيدجات (Open Graph Meta Tags) -->
+    <meta property="og:title" content="باكيدج - الحديقة السرية" />
+    <meta property="og:description"
+        content="تصفح تشكيلة مميزة من الباكيدجات المتكاملة والهدايا المنسقة بعناية لتناسب جميع مناسباتكم السعيدة." />
+    <meta property="og:image" content="images/logo/1.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- 3. ملفات التنسيق والأيقونات -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>باكيدج - الحديقة السرية</title>
+</head>
+
+<body>
+
+    <header>
+        <h1> الْحَدِيقَةُ السِّرِّيَّةُ </h1>
+        <p>أَثَرٌ يَبْقَى فِي الْقُلُوبِ</p>
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">من منتجاتنا</a>
+
+        <div class="dropdown">
+            <a href="#" class="active">الأصناف <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="package.html">باكيدج</a>
+                <a href="hijab-party.html"> توزيعات حفل حجاب</a>
+                <a href="teacher.html">توزيعات معلم</a>
+                <a href="quran-teacher.html">توزيعات معلم القرآن</a>
+                <a href="back-to-school.html">توزيعات العوده للمدرسه</a>
+                <a href="school-friends.html">توزيعات لأصدقاء المدرسة</a>
+                <a href="students.html">توزيعات للطلاب</a>
+                <a href="sebou.html">توزيعات سبوع</a>
+                <a href="mugs.html">المجات</a>
+                <a href="stationery.html">أدوات مكتبية</a>
+                <a href="ramadan.html">توزيعات رمضانية</a>
+                <a href="eid-fitr.html">توزيعات عيد الفطر</a>
+                <a href="eid-adha.html">توزيعات عيد الأضحى</a>
+            </div>
+        </div>
+
+        <a href="about.html">من نحن</a>
+
+        <div class="dropdown">
+            <a href="#">اتصل بنا <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="https://wa.me/201118647458?text=استفسار" target="_blank" class="nav-whatsapp">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </a>
+                <a href="https://www.facebook.com/share/L6hiGmFAHGzEhfyb/?mibextid=A7sQZp" target="_blank"
+                    class="nav-facebook">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                </a>
+                <a href="https://www.instagram.com/thesecretgarden_50?igsh=aHc4M3ZqeXlzMWlj" target="_blank"
+                    class="nav-instagram">
+                    <i class="fab fa-instagram"></i> إنستجرام
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>باكيدج</h2>
+
+        <div class="product-container">
+
+            <!-- بداية كارت منتج: باكيدج تهنئه بالعيد -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 4) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- المسار الإنجليزي الصحيح المعتمد -->
+                        <img loading="lazy" src="images/package/eid-greeting/1.jpg" alt="باكيدج تهنئه بالعيد زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/eid-greeting/2.jpg" alt="باكيدج تهنئه بالعيد زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/eid-greeting/3.jpg" alt="باكيدج تهنئه بالعيد زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/eid-greeting/4.jpg" alt="باكيدج تهنئه بالعيد زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج تهنئة بالعيد</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">بوكس مميز يحتوي على 9 منتجات منسقة بعناية لتقديم أجمل تهنئة
+                    بمناسبة العيد وإدخال البهجة على قلوب أحبابكم.</p>
+
+                <!-- 4. خانة الأسعار والخصم (إظهار شارة 0% خصم بالمسطرة) -->
+                <div class="product-price-box">
+                    <span class="old-price">450 ج.م</span>
+                    <span class="new-price">450 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج المشفر للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%AA%D9%87%D9%86%D8%A6%D8%A9%20%D8%A8%D8%A7%D9%84%D8%B9%D9%8A%D8%AF"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج تهنئه بالعيد -->
+
+            <!-- بداية كارت منتج: باكيدج للأم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 4) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 4 صور الخاص بباكيدج للأم -->
+                        <img loading="lazy" src="images/package/mother-package/1.jpg" alt="باكيدج للأم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/mother-package/2.jpg" alt="باكيدج للأم زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/mother-package/3.jpg" alt="باكيدج للأم زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/mother-package/4.jpg" alt="باكيدج للأم زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج للأم</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">هدية رقيقة لوالدتك الغالية تحتوي على رسالة ونوت بوك بتصميم
+                    مميز.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">70 ج.م</span>
+                    <span class="new-price">70 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D9%84%D9%84%D8%A3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج للأم -->
+
+
+
+            <!-- بداية كارت منتج: باكيدج الزوجة -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/wife-package/1.jpg" alt="باكيدج الزوجة زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/wife-package/2.jpg" alt="باكيدج الزوجة زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/wife-package/3.jpg" alt="باكيدج الزوجة زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>باكيدج الزوجة</h4>
+
+                <p style="font-size: 14px; color: #777;">بوكس فاخر يحتوي على 23 منتجًا مميزًا ومنسقًا بعناية لزوجتك
+                    الغالية.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">1525 ج.م</span>
+                    <span class="new-price">1525 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%B2%D9%88%D8%AC%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الزوجة -->
+
+            <!-- بداية كارت منتج: باكيدج مولودة -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/baby-girl-package/1.jpg" alt="باكيدج مولودة زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/baby-girl-package/2.jpg" alt="باكيدج مولودة زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/baby-girl-package/3.jpg" alt="باكيدج مولودة زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>باكيدج مولودة</h4>
+
+                <p style="font-size: 14px; color: #777;">بوكس مميز يحتوي على 12 منتجًا منسقًا بعناية لاستقبال المولودة
+                    الجديدة (السعر متغير حسب اختيارك للمنتجات).</p>
+
+                <div class="product-price-box">
+                    <span class="new-price" style="font-size: 16px;">حسب المنتجات</span>
+                    <span class="discount-badge">سعر متغير</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D9%84%D9%84%D9%85%D9%84%D9%88%D8%AF%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج مولودة -->
+
+            <!-- بداية كارت منتج: باكيدج الابن -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 4) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 4 صور الخاص بباكيدج الابن -->
+                        <img loading="lazy" src="images/package/son-package/1.jpg" alt="باكيدج الابن زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/son-package/2.jpg" alt="باكيدج الابن زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/son-package/3.jpg" alt="باكيدج الابن زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/son-package/4.jpg" alt="باكيدج الابن زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابن</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة ومميزة تحتوي على 5 منتجات رائعة ومناسبة للابن.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">400 ج.م</span>
+                    <span class="new-price">400 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابن -->
+
+
+
+            <!-- بداية كارت منتج: باكيدج إهداء لأنفسنا -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الخاص بباكيدج إهداء لأنفسنا -->
+                        <img loading="lazy" src="images/package/self-gift-package/1.jpg" alt="باكيدج إهداء لأنفسنا زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/self-gift-package/2.jpg" alt="باكيدج إهداء لأنفسنا زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/self-gift-package/3.jpg" alt="باكيدج إهداء لأنفسنا زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج إهداء لأنفسنا</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">بوكس مميز لتدليل نفسك، ومتاح إضافة أو تغيير أي منتج داخل
+                    الباكيدج حسب رغبتك.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">345 ج.م</span>
+                    <span class="new-price">345 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A5%D9%87%D8%AF%D8%A7%D8%A1%20%D9%84%D8%A3%D9%86%D9%81%D8%B3%D9%86%D8%A7"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج إهداء لأنفسنا -->
+
+
+            <!-- بداية كارت منتج: باكيدج تهنئة بالحجاب -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 6) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 6 صور الخاص بباكيدج تهنئة بالحجاب -->
+                        <img loading="lazy" src="images/package/congrats-hijab-package/1.jpg" alt="باكيدج تهنئة بالحجاب زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/congrats-hijab-package/2.jpg" alt="باكيدج تهنئة بالحجاب زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/congrats-hijab-package/3.jpg" alt="باكيدج تهنئة بالحجاب زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/congrats-hijab-package/4.jpg" alt="باكيدج تهنئة بالحجاب زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/congrats-hijab-package/5.jpg" alt="باكيدج تهنئة بالحجاب زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/congrats-hijab-package/6.jpg" alt="باكيدج تهنئة بالحجاب زاوية 6"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج تهنئة بالحجاب</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">بوكس فخم وضخم يحتوي على 30 منتجًا منسقًا بعناية للاحتفال بجمال
+                    الحجاب.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">1690 ج.م</span>
+                    <span class="new-price">1690 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%AA%D9%87%D9%86%D8%A6%D8%A9%20%D8%A8%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%A8"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج تهنئة بالحجاب -->
+
+
+
+            <!-- بداية كارت منتج: باكيدج حجاب 1 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 6) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 6 صور الجديد لباكيدج حجاب 1 -->
+                        <img loading="lazy" src="images/package/hijab-package-1/1.jpg" alt="باكيدج حجاب 1 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/hijab-package-1/2.jpg" alt="باكيدج حجاب 1 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/hijab-package-1/3.jpg" alt="باكيدج حجاب 1 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/hijab-package-1/4.jpg" alt="باكيدج حجاب 1 زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/hijab-package-1/5.jpg" alt="باكيدج حجاب 1 زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/hijab-package-1/6.jpg" alt="باكيدج حجاب 1 زاوية 6"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج حجاب 1</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">بوكس أنيق يحتوي على 6 منتجات منسقة بعناية فائقة لتناسب إطلالة
+                    الحجاب.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">380 ج.م</span>
+                    <span class="new-price">380 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%AD%D8%AC%D8%A7%D8%A8%20%D9%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج حجاب 1 -->
+
+            <!-- بداية كارت منتج: باكيدج حجاب 2 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الخاص بباكيدج حجاب 2 -->
+                        <img loading="lazy" src="images/package/hijab-package-2/1.jpg" alt="باكيدج حجاب 2 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/hijab-package-2/2.jpg" alt="باكيدج حجاب 2 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/hijab-package-2/3.jpg" alt="باكيدج حجاب 2 زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج حجاب 2</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 3 منتجات مميزة لتناسب إطلالة الحجاب.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">230 ج.م</span>
+                    <span class="new-price">230 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%AD%D8%AC%D8%A7%D8%A8%202%0A%0A"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج حجاب 2 -->
+
+            <!-- بداية كارت منتج: باكيدج تهنئة بالنجاح 1 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 4) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 4 صور الجديد لباكيدج تهنئة بالنجاح 1 -->
+                        <img loading="lazy" src="images/package/success-package-1/1.jpg" alt="باكيدج تهنئة بالنجاح 1 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-1/2.jpg" alt="باكيدج تهنئة بالنجاح 1 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-1/3.jpg" alt="باكيدج تهنئة بالنجاح 1 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-1/4.jpg" alt="باكيدج تهنئة بالنجاح 1 زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج تهنئة بالنجاح 1</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">بوكس فخم ومميز للاحتفال بالنجاح والخطوات الجديدة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">1600 ج.م</span>
+                    <span class="new-price">1600 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%AA%D9%87%D9%86%D8%A6%D8%A9%20%D8%A8%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%AD%20%D9%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج تهنئة بالنجاح 1 -->
+
+            <!-- بداية كارت منتج: باكيدج تهنئة بالنجاح 2 -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/success-package-2/1.jpg" alt="باكيدج تهنئة بالنجاح 2 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-2/2.jpg" alt="باكيدج تهنئة بالنجاح 2 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-2/3.jpg" alt="باكيدج تهنئة بالنجاح 2 زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>باكيدج تهنئة بالنجاح 2</h4>
+
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 3 منتجات مميزة للاحتفال بالنجاح.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">250 ج.م</span>
+                    <span class="new-price">250 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%AA%D9%87%D9%86%D8%A6%D8%A9%20%D8%A8%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%AD%20%D9%A2"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج تهنئة بالنجاح 2 -->
+
+            <!-- بداية كارت منتج: باكيدج تهنئة بالنجاح 3 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 5) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 5 صور الخاص بباكيدج تهنئة بالنجاح 3 -->
+                        <img loading="lazy" src="images/package/success-package-3/1.jpg" alt="باكيدج تهنئة بالنجاح 3 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-3/2.jpg" alt="باكيدج تهنئة بالنجاح 3 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-3/3.jpg" alt="باكيدج تهنئة بالنجاح 3 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-3/4.jpg" alt="باكيدج تهنئة بالنجاح 3 زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/success-package-3/5.jpg" alt="باكيدج تهنئة بالنجاح 3 زاوية 5"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج تهنئة بالنجاح 3</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة ومميزة للاحتفال بالنجاح والتفوق.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">220 ج.م</span>
+                    <span class="new-price">220 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%AA%D9%87%D9%86%D8%A6%D8%A9%20%D8%A8%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%AD%20%D9%A3"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج تهنئة بالنجاح 3 -->
+
+            <!-- بداية كارت منتج: باكيدج هدية لرفيقتي -->
+            <div class="product-card">
+
+                <!-- 1. حاوية الصورة الواحدة (بدون أسهم سلايدر لأنها صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- المسار الإنجليزي الصحيح للصورة الوحيدة -->
+                        <img loading="lazy" src="images/package/friend-package/1.jpg" alt="باكيدج هدية لرفيقتي"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج هدية لرفيقتي</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">بوكس رقيق يحتوي على 5 منتجات منسقة بحب وعناية لتهديها لرفيقتك
+                    وتعبّري لها عن صدق المحبة وجميل الأثر.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق) -->
+                <div class="product-price-box">
+                    <span class="old-price">240 ج.م</span>
+                    <span class="new-price">240 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة الجديدة المشفرة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D9%87%D8%AF%D9%8A%D8%A9%20%D9%84%D8%B1%D9%81%D9%8A%D9%82%D8%AA%D9%8A%0A%0A"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج هدية لرفيقتي -->
+
+            <!-- بداية كارت منتج: باكيدج الأخ -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 4) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- المسار الإنجليزي لـ 4 صور لباكيدج الأخ -->
+                        <img loading="lazy" src="images/package/brother-package/1.jpg" alt="باكيدج الأخ زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/brother-package/2.jpg" alt="باكيدج الأخ زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/brother-package/3.jpg" alt="باكيدج الأخ زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/brother-package/4.jpg" alt="باكيدج الأخ زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الأخ</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">بوكس مميز يحتوي على 3 منتجات (مج حراري، نوت بوك سلك، وكوستر)
+                    بتصميم أنيق يحمل عبارة "أخي سندي الدائم وصديق العمر" لتهديه لأخيك وتعبّر له عن مكانته.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق) -->
+                <div class="product-price-box">
+                    <span class="old-price">225 ج.م</span>
+                    <span class="new-price">225 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة الجديدة المشفرة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A3%D8%AE"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الأخ -->
+
+            <!-- بداية كارت منتج: مج للرفيقة -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 6) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 6 صور الخاص بمج للرفيقة -->
+                        <img loading="lazy" src="images/package/companion-mug/1.jpg" alt="مج للرفيقة زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/companion-mug/2.jpg" alt="مج للرفيقة زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/companion-mug/3.jpg" alt="مج للرفيقة زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/companion-mug/4.jpg" alt="مج للرفيقة زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/companion-mug/5.jpg" alt="مج للرفيقة زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/companion-mug/6.jpg" alt="مج للرفيقة زاوية 6"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>مج للرفيقة</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم راقٍ ومميز لرفيقة الدرب.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%85%D8%AC%20%D9%84%D9%84%D8%B1%D9%81%D9%8A%D9%82%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مج للرفيقة -->
+
+            <!-- بداية كارت منتج: باكيدج رفيقة 1 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الجديد لباكيدج رفيقة 1 -->
+                        <img loading="lazy" src="images/package/bestie-package-1/1.jpg" alt="باكيدج رفيقة 1 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-1/2.jpg" alt="باكيدج رفيقة 1 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-1/3.jpg" alt="باكيدج رفيقة 1 زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج رفيقة 1</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 11 منتجًا مميزًا لرفيقتك الغالية.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">580 ج.م</span>
+                    <span class="new-price">580 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج رفيقة 1 -->
+
+            <!-- بداية كارت منتج: باكيدج رفيقة 2 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية الصورة (بدون أسهم تقليب لأنها صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الوحيدة لباكيدج رفيقة 2 -->
+                        <img loading="lazy" src="images/package/bestie-package-2/1.jpg" alt="باكيدج رفيقة 2" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج رفيقة 2</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 6 منتجات مميزة لرفيقتك الغالية.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">315 ج.م</span>
+                    <span class="new-price">315 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%A2"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج رفيقة 2 -->
+
+            <!-- بداية كارت منتج: باكيدج رفيقة 3 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية الصورة (بدون أسهم تقليب لأنها صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الوحيدة لباكيدج رفيقة 3 -->
+                        <img loading="lazy" src="images/package/bestie-package-3/1.jpg" alt="باكيدج رفيقة 3" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج رفيقة 3</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 5 منتجات مميزة لرفيقتك الغالية.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">320 ج.م</span>
+                    <span class="new-price">320 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%A3"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج رفيقة 3 -->
+
+            <!-- بداية كارت منتج: باكيدج رفيقة 4 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية الصورة (بدون أسهم تقليب لأنها صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الوحيدة لباكيدج رفيقة 4 -->
+                        <img loading="lazy" src="images/package/bestie-package-4/1.jpg" alt="باكيدج رفيقة 4" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج رفيقة 4</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة ومميزة لرفيقتك الغالية.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">220 ج.م</span>
+                    <span class="new-price">220 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%A4"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج رفيقة 4 -->
+
+            <!-- بداية كارت منتج: باكيدج رفيقة 5 -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/bestie-package-5/1.jpg" alt="باكيدج رفيقة 5 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-5/2.jpg" alt="باكيدج رفيقة 5 زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>باكيدج رفيقة 5</h4>
+
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 4 منتجات مميزة لرفيقتك الغالية.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">290 ج.م</span>
+                    <span class="new-price">290 ج.m</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%A5"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج رفيقة 5 -->
+
+            <!-- بداية كارت منتج: باكيدج رفيقة 6 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 6) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 6 صور الخاص بباكيدج رفيقة 6 -->
+                        <img loading="lazy" src="images/package/bestie-package-6/1.jpg" alt="باكيدج رفيقة 6 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-6/2.jpg" alt="باكيدج رفيقة 6 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-6/3.jpg" alt="باكيدج رفيقة 6 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-6/4.jpg" alt="باكيدج رفيقة 6 زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-6/5.jpg" alt="باكيدج رفيقة 6 زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-6/6.jpg" alt="باكيدج رفيقة 6 زاوية 6"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج رفيقة 6</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 3 منتجات مميزة لرفيقتك الغالية.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">240 ج.م</span>
+                    <span class="new-price">240 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%A6"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج رفيقة 6 -->
+
+            <!-- بداية كارت منتج: باكيدج رفيقة 7 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صور الخاص بباكيدج رفيقة 7 -->
+                        <img loading="lazy" src="images/package/bestie-package-7/1.jpg" alt="باكيدج رفيقة 7 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/bestie-package-7/2.jpg" alt="باكيدج رفيقة 7 زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج رفيقة 7</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 3 منتجات مميزة لرفيقتك الغالية.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">480 ج.م</span>
+                    <span class="new-price">480 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%A7"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج رفيقة 7 -->
+
+            <!--بداية كارت باكيدج الأخت-->
+
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/sister-package/1.jpg" alt="باكيدج الأخت زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package/2.jpg" alt="باكيدج الأخت زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package/3.jpg" alt="باكيدج الأخت زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package/4.jpg" alt="باكيدج الأخت زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package/5.jpg" alt="باكيدج الأخت زاوية 5"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>باكيدج الأخت</h4>
+
+                <p style="font-size: 14px; color: #777;">بوكس فخم يحتوي على 8 منتجات مميزة ومنسقة بعناية فائقة لتهديه
+                    لأختك الحبيبة، ليكون تعبيرًا رقيقًا عن المحبة ويدخل البهجة على قلبها.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">460 ج.م</span>
+                    <span class="new-price">460 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A3%D8%AE%D8%AA"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!--نهاية كارت باكيدج الأخت-->
+
+            <!--بداية كارت باكيدج الأخت-->
+
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/sister-package-2/1.jpg" alt="باكيدج أخت 2 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package-2/2.jpg" alt="باكيدج أخت 2 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package-2/3.jpg" alt="باكيدج أخت 2 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package-2/4.jpg" alt="باكيدج أخت 2 زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/sister-package-2/5.jpg" alt="باكيدج أخت 2 زاوية 5"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>باكيدج أخت 2</h4>
+
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 4 منتجات مميزة لأختك الغالية.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">220 ج.م</span>
+                    <span class="new-price">220 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A3%D8%AE%D8%AA%20%D9%A2"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!--نهاية كارت باكيدج الأخت-->
+
+
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/daughter-package/1.jpg" alt="باكيدج الابنة 1 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package/2.jpg" alt="باكيدج الابنة 1 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package/3.jpg" alt="باكيدج الابنة 1 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package/4.jpg" alt="باكيدج الابنة 1 زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package/5.jpg" alt="باكيدج الابنة 1 زاوية 5"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>باكيدج الابنة 1</h4>
+
+                <p style="font-size: 14px; color: #777;">بوكس لطيف ورقيق يحتوي على 5 منتجات مميزة ومنسقة بعناية فائقة
+                    لتهديه لابنتك الحبيبة، لتعبّر لها عن دلالها ومكانتها الغالية في قلبك وتدخل البهجة عليها.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">360 ج.م</span>
+                    <span class="new-price">360 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D8%A9%20%D9%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+
+            <!-- بداية كارت منتج: باكيدج الابنة 2 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الخاص بباكيدج الابنة 2 -->
+                        <img loading="lazy" src="images/package/daughter-package-2/1.jpg" alt="باكيدج الابنة 2 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-2/2.jpg" alt="باكيدج الابنة 2 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-2/3.jpg" alt="باكيدج الابنة 2 زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابنة 2</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">بوكس مميز ومعد بعناية فائقة ليكون الهدية المثالية لابنتك
+                    الغالية. (متاح تغيير أو إضافة أي منتج آخر حسب رغبتك لتناسب ذوقها الخاص).</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">575 ج.م</span>
+                    <span class="new-price">575 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D9%8A%D8%A9%20%D9%A2"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 2 -->
+
+            <!-- بداية كارت منتج: باكيدج الابنة 3 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية الصورة (تم إلغاء أسهم التقليب لأنها صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الوحيدة لباكيدج الابنة 3 -->
+                        <img loading="lazy" src="images/package/daughter-package-3/1.jpg" alt="باكيدج الابنة 3"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابنة 3</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">بوكس أنيق ومنسق بعناية فائقة يحتوي على مجموعة من المنتجات
+                    المميزة لتهديه لابنتك الغالية وتعبّر لها عن حبك ومكانتها الغالية.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">300 ج.م</span>
+                    <span class="new-price">300 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D9%8A%D8%A9%20%D9%A3"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 3 -->
+
+            <!-- بداية كارت منتج: باكيدج الابنة 4 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية الصورة (بدون أسهم تقليب لأنها صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الوحيدة لباكيدج الابنة 4 -->
+                        <img loading="lazy" src="images/package/daughter-package-4/1.jpg" alt="باكيدج الابنة 4"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابنة 4</h4>
+
+                <!-- 3. وصف المنتج (مختصر وبدون مبالغة) -->
+                <p style="font-size: 14px; color: #777;">مجموعة متميزة ومنسقة بعناية لتقديمها كهدية راقية لابنتك تعبيراً
+                    عن حبك واهتمامك بها.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">590 ج.م</span>
+                    <span class="new-price">590 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D9%8A%D8%A9%20%D9%A4"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 4 -->
+
+            <!-- بداية كارت منتج: باكيدج الابنة 5 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صور الخاص بباكيدج الابنة 5 -->
+                        <img loading="lazy" src="images/package/daughter-package-5/1.jpg" alt="باكيدج الابنة 5 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-5/2.jpg" alt="باكيدج الابنة 5 زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابنة 5</h4>
+
+                <!-- 3. وصف المنتج (مختصر جداً) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 5 منتجات مميزة لابنتك الحبيبة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">210 ج.م</span>
+                    <span class="new-price">210 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D9%8A%D8%A9%20%D9%A5"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 5 -->
+
+            <!-- بداية كارت منتج: باكيدج الابنة 6 -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/package/daughter-package-6/1.jpg" alt="باكيدج الابنة 6"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <h4>باكيدج الابنة 6</h4>
+
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 5 منتجات مميزة.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">275 ج.م</span>
+                    <span class="new-price">275 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D9%8A%D8%A9%20%D9%A6"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 6 -->
+
+            <!-- بداية كارت منتج: باكيدج الابنة 7 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 4) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 4 صور الخاص بباكيدج الابنة 7 -->
+                        <img loading="lazy" src="images/package/daughter-package-7/1.jpg" alt="باكيدج الابنة 7 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-7/2.jpg" alt="باكيدج الابنة 7 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-7/3.jpg" alt="باكيدج الابنة 7 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-7/4.jpg" alt="باكيدج الابنة 7 زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابنة 7</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 8 منتجات مميزة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">400 ج.م</span>
+                    <span class="new-price">400 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D8%A9%20%D9%A7"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 7 -->
+
+            <!-- بداية كارت منتج: باكيدج الابنة 8 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الخاص بباكيدج الابنة 8 -->
+                        <img loading="lazy" src="images/package/daughter-package-8/1.jpg" alt="باكيدج الابنة 8 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-8/2.jpg" alt="باكيدج الابنة 8 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-8/3.jpg" alt="باكيدج الابنة 8 زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابنة 8</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة تحتوي على 6 منتجات مميزة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">345 ج.م</span>
+                    <span class="new-price">345 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D8%A9%20%D9%A8"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 8 -->
+
+            <!-- بداية كارت منتج: باكيدج الابنة 9 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الخاص بباكيدج الابنة 9 -->
+                        <img loading="lazy" src="images/package/daughter-package-9/1.jpg" alt="باكيدج الابنة 9 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-9/2.jpg" alt="باكيدج الابنة 9 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/package/daughter-package-9/3.jpg" alt="باكيدج الابنة 9 زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج الابنة 9</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منسقة ومميزة كهدية راقية لابنتك.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">220 ج.م</span>
+                    <span class="new-price">220 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D8%A7%D9%84%D8%A7%D8%A8%D9%86%D9%8A%D8%A9%20%D9%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج الابنة 9 -->
+
+            <!-- بداية كارت منتج: باكيدج معلمة -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الواحدة الخاص بباكيدج معلمة -->
+                        <img loading="lazy" src="images/package/teacher-package/1.jpg" alt="باكيدج معلمة" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج معلمة</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">بوكس تقديري أنيق للمعلمة، ومتاح إضافة أو تغيير أي منتج داخل
+                    الباكيدج حسب رغبتك.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">700 ج.م</span>
+                    <span class="new-price">700 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D9%85%D8%B9%D9%84%D9%85%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج معلمة -->
+
+            <!-- بداية كارت منتج: باكيدج منظمات 1 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الواحدة الخاص بباكيدج منظمات 1 -->
+                        <img loading="lazy" src="images/package/organizers-package-1/1.jpg" alt="باكيدج منظمات 1"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج منظمات 1</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منظمات عملية وأنيقة لترتيب وتنظيم المساحات بكفاءة عالية.
+                </p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">525 ج.م</span>
+                    <span class="new-price">525 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D9%85%D9%86%D8%B8%D9%85%D8%A7%D8%AA%20%D9%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج منظمات 1 -->
+
+            <!-- بداية كارت منتج: باكيدج منظمات 2 -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الواحدة الخاص بباكيدج منظمات 2 -->
+                        <img loading="lazy" src="images/package/organizers-package-2/1.jpg" alt="باكيدج منظمات 2"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>باكيدج منظمات 2</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">مجموعة منظمات عملية وأنيقة تساعدك على ترتيب وتنظيم أدواتك
+                    بسهولة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">390 ج.م</span>
+                    <span class="new-price">390 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج بالصيغة المختصرة والمصححة للواتساب مباشرة -->
+                <a href="https://wa.me/201118647458?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AF%D8%AC%20%D9%85%D9%86%D8%B8%D9%85%D8%A7%D8%AA%20%D9%A2"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: باكيدج منظمات 2 -->
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img loading="lazy" class="modal-content" id="imgFull">
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="#" class="order-btn" target="_blank" style="text-decoration: none;">
+                <i class="fas fa-shopping-cart"></i> انتقل للطلب فوراً
+            </a>
+        </div>
+    </div>
+
+    <footer style="width: 100%; background-color: #0b5b73; margin: 0; padding: 15px 0; box-sizing: border-box;">
+        <div
+            style="display: flex; align-items: center; justify-content: center; gap: 15px; direction: ltr; width: 100%;">
+            <img loading="lazy" src="images/copy/copy.jpg" alt="Eng. Yossef Mohamed" onclick="openModal(this)"
+                style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid white; object-fit: cover; cursor: pointer; flex-shrink: 0;">
+            <p
+                style="margin: 0; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; line-height: 1.4; color: white;">
+                Designed & Developed by <strong>Eng. Yossef Mohamed</strong><br>
+                <span style="font-size: 12px; color: #eee;">Copyright © 2026</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 1️⃣ دالة السلايدر الذكي مع اللف اللانهائي (Infinity Loop) المتوافقة مع العربي
+        function moveSlider(button, direction) {
+            const slider = button.parentElement.querySelector('.product-slider');
+            const images = slider.querySelectorAll('img');
+            const totalImages = images.length;
+            const scrollAmount = slider.clientWidth;
+
+            let currentIndex = Math.round(Math.abs(slider.scrollLeft) / scrollAmount);
+
+            if (direction === -1) {
+                currentIndex++;
+            } else {
+                currentIndex--;
+            }
+
+            if (currentIndex >= totalImages) {
+                slider.scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            } else if (currentIndex < 0) {
+                slider.scrollTo({
+                    left: -scrollAmount * (totalImages - 1),
+                    behavior: 'smooth'
+                });
+            } else {
+                slider.scrollTo({
+                    left: -scrollAmount * currentIndex,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // 2️⃣ دالة فتح المودال وتكبير الصورة (تم تعديلها لحمايتك من البيع الفوري 😂)
+        function openModal(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("imgFull");
+
+            modal.style.display = "block";
+            modalImg.src = element.src;
+
+            // بنلقط زرار الانتقال اللي جوه المودال الكبيرة
+            const modalOrderBtn = document.querySelector('#imageModal .order-btn') || document.querySelector('#imageModal a');
+
+            // بنشيك: هل الصورة المفتوحة دي موجودة جوه كارت منتج؟
+            const productCard = element.closest('.product-card');
+
+            if (productCard && modalOrderBtn) {
+                // لو صورة منتج: بنلقط زرار الواتساب المشفر ونظهره فوراً
+                const originalOrderBtn = productCard.querySelector('.order-btn');
+                if (originalOrderBtn) {
+                    modalOrderBtn.href = originalOrderBtn.href;
+                    modalOrderBtn.style.display = "inline-block"; // إظهار الزرار للمنتجات
+                }
+            } else if (modalOrderBtn) {
+                // 🔒 حماية البشمهندس: لو صورتك أنت اللي فتحت (برة الكروت)، اخفي الزرار تماماً!
+                modalOrderBtn.style.display = "none";
+            }
+        }
+
+        // 3️⃣ دالة إغلاق المودال بالزرار الخاص به (X)
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        // 4️⃣ إغلاق المودال تلقائياً لو العميل داس في أي حتة فاضية برا الصورة
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // 📱 5️⃣ سكريبت التاتش والموبايل الذكي لفتح القائمة وتشغيل الحركات باللمس
+        document.querySelectorAll('.dropdown-content a').forEach(link => {
+            // أول ما صباعه يلمس الشاشة
+            link.addEventListener('touchstart', function () {
+                this.classList.add('touch-active');
+            });
+
+            // أول ما صباعه يترفع أو يتحرك بالسكرول شيل الحركة بنعومة
+            link.addEventListener('touchend', function () {
+                setTimeout(() => {
+                    this.classList.remove('touch-active');
+                }, 150); // تأخير بسيط عشان عينه تلمح الحركة الذهبية
+            });
+        });
+
+        // حركة صايعة: لو داس على كلمة "الأصناف" نفسها في الموبايل تفتح وتقفل القائمة بسلاسة
+        const dropdownLink = document.querySelector('.dropdown > a');
+        if (dropdownLink) {
+            dropdownLink.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) { // شاشات الموبايل والتابلت بس
+                    e.preventDefault(); // نمنع اللينك يرفع الصفحة لفوق
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        }
+
+        // لو داس في أي حتة فاضية برة القائمة يقفلها فوراً في الموبايل
+        window.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+            }
+        });
+    </script>
+    <!-- زرار العودة لأعلى الصفحة (مترحل لليمين ومرفوع فوق الفوتر والواتساب) -->
+    <button id="backToTopBtn" onclick="scrollToTop()" title="العودة لأعلى الصفحة"
+        style="display: none; position: fixed; bottom: 95px; right: 25px; z-index: 9999; border: none; outline: none; background-color: #0b5b73; color: white; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease; opacity: 0.85;">
+        ▲
+    </button>
+
+    <script>
+        const topBtn = document.getElementById("backToTopBtn");
+
+        function handleScroll() {
+            if (window.pageYOffset > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.style.display = "block";
+                setTimeout(() => {
+                    topBtn.style.opacity = "0.85";
+                    topBtn.style.transform = "translateY(0)";
+                }, 10);
+            } else {
+                topBtn.style.opacity = "0";
+                topBtn.style.transform = "translateY(10px)";
+                setTimeout(() => {
+                    if (window.pageYOffset <= 300) topBtn.style.display = "none";
+                }, 300);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('touchmove', handleScroll, { passive: true });
+        window.addEventListener('wheel', handleScroll, { passive: true });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        topBtn.onmouseover = function () {
+            this.style.backgroundColor = "#ff1493";
+            this.style.transform = "scale(1.1)";
+            this.style.opacity = "1";
+        }
+        topBtn.onmouseout = function () {
+            this.style.backgroundColor = "#0b5b73";
+            this.style.transform = "scale(1)";
+            this.style.opacity = "0.85";
+        }
+    </script>
+</body>
+
+</html>

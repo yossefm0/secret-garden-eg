@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="الحديقة السرية، متجر هدايا، نوتات، تنسيق هدايا، هدايا ">
+    <meta name="author" content="Eng.Yossef Mohamed" />
+    <meta name="description"
+        content="الْحَدِيقَةُ السِّرِّيَّةُ مساحةٌ تنبضُ بالمعاني الجميلة، نؤمن فيها أنَّ الهديةَ ليستْ مجرَّدَ عطاءٍ ماديٍّ، بل رسالةُ محبةٍ وتقديرٍ، وأثرٌ طيبٌ يبقى في القلوب. نُعنى بتقديم هدايا ومبادراتٍ هادفةٍ تُعبِّر عن الامتنان، وتُكرِّم القدوات، وتُعزِّز القيم، وتُسهم في نشر البهجة وإحياء معاني الوفاء والتقدير في المناسبات المختلفة." />
+
+    <!-- 1. اللوجو في تاب المتصفح (Favicon) بالمسار المظبوط -->
+    <link rel="icon" type="image/jpeg" href="images/logo/1.jpg">
+
+    <!-- 2. كروت المعاينة لصفحة توزيعات معلم (Open Graph Meta Tags) -->
+    <meta property="og:title" content="توزيعات معلم - الحديقة السرية" />
+    <meta property="og:description"
+        content="تشكيلة مميزة وقيمة من التوزيعات وهدايا المعلمين والمعلمات، تعبيراً عن الشكر والامتنان والتقدير لرسالتهم السامية وفضلهم الكبير." />
+    <meta property="og:image" content="images/logo/1.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- 3. ملفات التنسيق والأيقونات -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>توزيعات معلم - الحديقة السرية</title>
+</head>
+
+<body>
+
+    <header>
+        <h1> الْحَدِيقَةُ السِّرِّيَّةُ </h1>
+        <p>أَثَرٌ يَبْقَى فِي الْقُلُوبِ</p>
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">من منتجاتنا</a>
+
+        <div class="dropdown">
+            <a href="#" class="active">الأصناف <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="package.html">باكيدج</a>
+                <a href="hijab-party.html"> توزيعات حفل حجاب</a>
+                <a href="teacher.html">توزيعات معلم</a>
+                <a href="quran-teacher.html">توزيعات معلم القرآن</a>
+                <a href="back-to-school.html">توزيعات العوده للمدرسه</a>
+                <a href="school-friends.html">توزيعات لأصدقاء المدرسة</a>
+                <a href="students.html">توزيعات للطلاب</a>
+                <a href="sebou.html">توزيعات سبوع</a>
+                <a href="mugs.html">المجات</a>
+                <a href="stationery.html">أدوات مكتبية</a>
+                <a href="ramadan.html">توزيعات رمضانية</a>
+                <a href="eid-fitr.html">توزيعات عيد الفطر</a>
+                <a href="eid-adha.html">توزيعات عيد الأضحى</a>
+            </div>
+        </div>
+
+        <a href="about.html">من نحن</a>
+
+        <div class="dropdown">
+            <a href="#">اتصل بنا <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="https://wa.me/201118647458?text=استفسار" target="_blank" class="nav-whatsapp">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </a>
+                <a href="https://www.facebook.com/share/L6hiGmFAHGzEhfyb/?mibextid=A7sQZp" target="_blank"
+                    class="nav-facebook">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                </a>
+                <a href="https://www.instagram.com/thesecretgarden_50?igsh=aHc4M3ZqeXlzMWlj" target="_blank"
+                    class="nav-instagram">
+                    <i class="fab fa-instagram"></i> إنستجرام
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>توزيعات معلم </h2>
+
+        <div class="product-container">
+
+            <!-- بداية كارت منتج: هدية معلم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 5) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 5 صور الخاص بهدية معلم تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/teacher-gift/1.jpg" alt="هدية معلم زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-gift/2.jpg" alt="هدية معلم زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-gift/3.jpg" alt="هدية معلم زاوية 3" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-gift/4.jpg" alt="هدية معلم زاوية 4" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-gift/5.jpg" alt="هدية معلم زاوية 5" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>هدية معلم 👩‍🏫</h4>
+
+                <!-- 3. وصف المنتج (تفاصيل المج والتغليف) -->
+                <p style="font-size: 14px; color: #777;">مج بيد ملون بسعر 175 ج.م، متوفر تغليف في بوكس بني بسعر الشنطة
+                    35 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم (سعر المج الأساسي 175 ج.م) -->
+                <div class="product-price-box">
+                    <span class="old-price">175 ج.م</span>
+                    <span class="new-price">175 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%87%D8%AF%D9%8A%D8%A9%20%D9%85%D8%B9%D9%84%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: هدية معلم -->
+
+            <!-- بداية كارت منتج: نوت بوك المعلم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الخاص بالنوت بوك تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/teacher-notebook/1.jpg" alt="نوت بوك المعلم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-notebook/2.jpg" alt="نوت بوك المعلم زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-notebook/3.jpg" alt="نوت بوك المعلم زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>نوت بوك المعلم</h4>
+
+                <!-- 3. وصف المنتج (تفاصيل الغلاف العادي والخشب) -->
+                <p style="font-size: 14px; color: #777;">متوفر بغلاف عادي بسعر 35 ج.م، أو غلاف خشب مخصص بالإسم بسعر 55
+                    ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم (عرض السعرين للتوضيح) -->
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">55 ج.م</span>
+                    <span class="discount-badge">حسب الغلاف</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%86%D9%88%D8%AA%20%D8%A8%D9%88%D9%83%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: نوت بوك المعلم -->
+
+            <!-- بداية كارت منتج: كارت خاتم التسبيح -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الواحدة الخاص بكارت خاتم التسبيح تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/tasbeeh-ring-card/1.jpg" alt="كارت خاتم التسبيح"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>كارت خاتم التسبيح</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">خاتم تسبيح رقمي مثبت على كارت إهداء بتصميم أنيق ومميز، هدية
+                    قيمة ومعبرة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">35 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%83%D8%A7%D8%B1%D8%AA%20%D8%AE%D8%A7%D8%AA%D9%85%20%D8%A7%D9%84%D8%AA%D8%B3%D8%A8%D9%8A%D8%AD"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: كارت خاتم التسبيح -->
+
+            <!-- بداية كارت منتج: كارت ميدالية خشب بفيونكة -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صورة الخاص بكارت ميدالية خشب بفيونكة تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/wooden-keychain-card/1.jpg" alt="كارت ميدالية خشب بفيونكة زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/wooden-keychain-card/2.jpg" alt="كارت ميدالية خشب بفيونكة زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>كارت ميدالية خشب بفيونكة</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">ميدالية خشبية محفورة ومثبتة على كارت إهداء أنيق ومزين بفيونكة
+                    رقيقة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">25 ج.م</span>
+                    <span class="new-price">25 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%83%D8%A7%D8%B1%D8%AA%20%D9%85%D9%8A%D8%AF%D8%A7%D9%84%D9%8A%D8%A9%20%D8%AE%D8%B4%D8%A8%20%D8%A8%D9%81%D9%8A%D9%88%D9%86%D9%83%D9%87"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: كارت ميدالية خشب بفيونكة -->
+
+            <!-- بداية كارت منتج: كارت القلم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 6) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 6 صور الخاص بكارت القلم تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/pen-card/1.jpg" alt="كارت القلم زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/pen-card/2.jpg" alt="كارت القلم زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/pen-card/3.jpg" alt="كارت القلم زاوية 3" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/pen-card/4.jpg" alt="كارت القلم زاوية 4" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/pen-card/5.jpg" alt="كارت القلم زاوية 5" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/pen-card/6.jpg" alt="كارت القلم زاوية 6" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>كارت القلم</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">قلم مميز مثبت على كارت إهداء بتصميم أنيق ومناسب لتقديمه كهدية
+                    للمعلم.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">25 ج.م</span>
+                    <span class="new-price">25 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%83%D8%A7%D8%B1%D8%AA%20%D8%A7%D9%84%D9%82%D9%84%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: كارت القلم -->
+
+            <!-- بداية كارت منتج: توزيعات الحلق -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صورة الخاص بتوزيعات الحلق تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/earrings-gift/1.jpg" alt="توزيعات الحلق زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/earrings-gift/2.jpg" alt="توزيعات الحلق زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>توزيعات الحلق</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">حلق أنيق مثبت على كارت إهداء بتصميم رقيق، كهدية تذكارية مميزة
+                    ولطيفة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">25 ج.م</span>
+                    <span class="new-price">25 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط (تم تصحيح "توزيعات") -->
+                <a href="https://wa.me/201118647458?text=%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D9%84%D9%82"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: توزيعات الحلق -->
+
+            <!-- بداية كارت منتج: توزيعات الميدالية الفرو -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صورة الخاص بتوزيعات الميدالية الفرو تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/fur-keychain-gift/1.jpg" alt="توزيعات الميدالية الفرو زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/fur-keychain-gift/2.jpg" alt="توزيعات الميدالية الفرو زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>توزيعات الميدالية الفرو</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">ميدالية فرو ناعمة ومميزة مثبتة على كارت إهداء أنيق، هدية لطيفة
+                    ومبهجة.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">45 ج.م</span>
+                    <span class="new-price">45 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%8A%D8%AF%D8%A7%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D9%81%D8%B1%D9%88"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: توزيعات الميدالية الفرو -->
+
+            <!-- بداية كارت منتج: توزيعات ليب جلاس أو روج أو مرطب ميني -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <!-- مسار الصورة الواحدة الخاص بتوزيعات الليب جلاس تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/mini-lipcare-gift/1.jpg" alt="توزيعات ليب جلاس ميني أو روج أو مرطب"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>توزيعات ليب جلاس أو روج أو مرطب ميني</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">توزيعات أنيقة تحتوي على (ليب جلاس ميني / روج ميني / مرطب شفاه)
+                    مثبتة على كارت إهداء مميز.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">35 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%84%D9%8A%D8%A8%20%D8%AC%D9%84%D8%A7%D8%B3%20%D9%85%D9%8A%D9%86%D9%8A%20%D8%A7%D9%88%20%D8%B1%D9%88%D8%AC%20%D9%85%D9%8A%D9%86%D9%8A%20%D8%A7%D9%88%20%D9%85%D8%B1%D8%B7%D8%A8%20%D8%B4%D9%81%D8%A7%D9%87"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: توزيعات ليب جلاس أو روج أو مرطب ميني -->
+
+            <!-- بداية كارت منتج: استيك نوت مستورده -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 4) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 4 صور الخاص باستيك نوت مستورده تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/imported-sticky-notes/1.jpg" alt="استيك نوت مستورده زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/imported-sticky-notes/2.jpg" alt="استيك نوت مستورده زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/imported-sticky-notes/3.jpg" alt="استيك نوت مستورده زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/imported-sticky-notes/4.jpg" alt="استيك نوت مستورده زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>استيك نوت مستورده</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">أوراق ملاحظات لاصقة (استيك نوت) مستوردة بأشكال مميزة وألوان
+                    مبهجة وعالية الجودة لتنظيم الأفكار والمهام.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">30 ج.م</span>
+                    <span class="new-price">30 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D8%A7%D8%B3%D8%AA%D9%8A%D9%83%20%D9%86%D9%88%D8%AA%20%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF%D9%87"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: استيك نوت مستورده -->
+
+            <!-- بداية كارت منتج: توزيعات العطر للمعلم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صورة الخاص بتوزيعات العطر تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/perfume-gift/1.jpg" alt="توزيعات العطر للمعلم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/perfume-gift/2.jpg" alt="توزيعات العطر للمعلم زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>توزيعات العطر للمعلم</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">زجاجة عطر ميني أنيقة ومثبتة على كارت إهداء راقٍ ومميز لشكر
+                    المعلم وتعبيره عن الامتنان.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">30 ج.م</span>
+                    <span class="new-price">30 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D8%B7%D8%B1%20%D9%84%D9%84%D9%85%D8%B9%D9%84%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: توزيعات العطر للمعلم -->
+
+            <!-- بداية كارت منتج: ميدالية فون للمعلم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صورة الخاص بميدالية الفون تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/phone-keychain-gift/1.jpg" alt="ميدالية فون للمعلم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/phone-keychain-gift/2.jpg" alt="ميدالية فون للمعلم زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>ميدالية فون للمعلم</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">ميدالية هاتف (فون) بتصميم أنيق ومميز مثبتة على كارت إهداء راقٍ
+                    ومناسب لتقديمه كهدية تذكارية للمعلم.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">30 ج.م</span>
+                    <span class="new-price">30 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%8A%D8%AF%D8%A7%D9%84%D9%8A%D8%A9%20%D9%81%D9%88%D9%86%20%D9%84%D9%84%D9%85%D8%B9%D9%84%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: ميدالية فون للمعلم -->
+
+            <!-- بداية كارت منتج: نوت بوك ورق كريمي -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 3) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 3 صور الخاص بالنوت بوك تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/cream-paper-notebook/1.jpg" alt="نوت بوك ورق كريمي زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/cream-paper-notebook/2.jpg" alt="نوت بوك ورق كريمي زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/cream-paper-notebook/3.jpg" alt="نوت بوك ورق كريمي زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>نوت بوك ورق كريمي</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">نوت بوك مميز بورق كريمي مريح للعين وعالي الجودة، تصميم أنيق
+                    وعملي لتدوين الملاحظات والمهام اليومية.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">30 ج.م</span>
+                    <span class="new-price">30 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%86%D9%88%D8%AA%20%D8%A8%D9%88%D9%83%20%D9%88%D8%B1%D9%82%20%D9%83%D8%B1%D9%8A%D9%85%D9%8A"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: نوت بوك ورق كريمي -->
+
+            <!-- بداية كارت منتج: فاصل مصحف أو كتاب مع شوكليت -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <!-- مسار الـ 2 صورة الخاص بفاصل الكتاب والشوكليت تحت مسار teacher -->
+                        <img loading="lazy" src="images/teacher/bookmark-chocolate-gift/1.jpg"
+                            alt="فاصل مصحف أو كتاب مع شوكليت زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/bookmark-chocolate-gift/2.jpg"
+                            alt="فاصل مصحف أو كتاب مع شوكليت زاوية 2" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>فاصل مصحف أو كتاب مع شوكليت</h4>
+
+                <!-- 3. وصف المنتج (مختصر ومباشر) -->
+                <p style="font-size: 14px; color: #777;">هدية حلوة جداً للمعلم، تحتوي على فاصل كتاب أو مصحف بتصميم راقٍ
+                    مع قطعة شوكولاتة فاخرة لإدخال السرور على قلوبهم.</p>
+
+                <!-- 4. خانة الأسعار والخصم (0% خصم للتناسق البصري) -->
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">35 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج برسالة الواتساب المشفّرة باسم المنتج فقط -->
+                <a href="https://wa.me/201118647458?text=%D9%81%D8%A7%D8%B5%D9%84%20%D9%85%D8%B5%D8%AD%D9%81%20%D8%A3%D9%88%20%D9%83%D8%AA%D8%A7%D8%A8%20%D9%85%D8%B9%20%D8%B4%D9%88%D9%83%D9%84%D9%8A%D8%AA"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: فاصل مصحف أو كتاب مع شوكليت -->
+
+            <!-- بداية كارت منتج: قلم كرييتيف -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/creative-pen/1.jpg" alt="قلم كرييتيف زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/creative-pen/2.jpg" alt="قلم كرييتيف زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/creative-pen/3.jpg" alt="قلم كرييتيف زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/creative-pen/4.jpg" alt="قلم كرييتيف زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>قلم كرييتيف</h4>
+
+                <p style="font-size: 14px; color: #777;">للناس اللي بتحب الهدية كرييتيف، قلم بتصميم جديد ومميز وشكله شيك
+                    ومختلف جداً لتقديمه كإهداء راقٍ.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">40 ج.م</span>
+                    <span class="new-price">40 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%82%D9%84%D9%85%20%D9%83%D8%B1%D9%8A%D9%8A%D8%AA%D9%8A%D9%81"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: قلم كرييتيف -->
+
+            <!-- بداية كارت منتج: كلبس الوردة الحجم الأصغر -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/small-flower-clip/1.jpg" alt="كلبس الوردة الحجم الأصغر"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <h4>كلبس الوردة الحجم الأصغر</h4>
+
+                <p style="font-size: 14px; color: #777;">كلبس شعر أنيق بتصميم الوردة المميز بالحجم الأصغر، لمسة رقيقة
+                    وعملية للإهداء.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">25 ج.م</span>
+                    <span class="new-price">25 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%83%D9%84%D8%A8%D8%B3%20%D8%A7%D9%84%D9%88%D8%B1%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AD%D8%AC%D9%85%20%D8%A7%D9%84%D8%A3%D8%B5%D8%BA%D8%B1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: كلبس الوردة الحجم الأصغر -->
+
+            <!-- بداية كارت منتج: كلبس الوردة الحجم الكبير -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/large-flower-clip/1.jpg" alt="كلبس الوردة الحجم الكبير زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/large-flower-clip/2.jpg" alt="كلبس الوردة الحجم الكبير زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/large-flower-clip/3.jpg" alt="كلبس الوردة الحجم الكبير زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>كلبس الوردة الحجم الكبير</h4>
+
+                <p style="font-size: 14px; color: #777;">التوزيعات الأقرب لقلبي وقلوبكم، كلبس بتصميم الوردة المميز
+                    بالحجم الكبير الأنيق، هدية شيك ولطيفة جداً.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">35 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%83%D9%84%D8%A8%D8%B3%20%D8%A7%D9%84%D9%88%D8%B1%D8%AF%D8%A9%20%D8%A7%D9%84%D8%AD%D8%AC%D9%85%20%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: كلبس الوردة الحجم الكبير -->
+
+            <!-- بداية كارت منتج: توزيعات كارت المرطب أو المخمرية أو التنت -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/moisturizer-makhmariya-tint/1.jpg"
+                            alt="توزيعات كارت المرطب أو المخمرية أو التنت زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/moisturizer-makhmariya-tint/2.jpg"
+                            alt="توزيعات كارت المرطب أو المخمرية أو التنت زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/moisturizer-makhmariya-tint/3.jpg"
+                            alt="توزيعات كارت المرطب أو المخمرية أو التنت زاوية 3" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>توزيعات كارت المرطب أو المخمرية أو التنت</h4>
+
+                <p style="font-size: 14px; color: #777;">من أجمل الهدايا اللي ممكن تفرح المعلمات، المرطب والمخمرية بسعر
+                    35 ج.م، والتنت بسعر 20 ج.م مثبتة على كارت إهداء مميز.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">20 ج.م</span>
+                    <span class="new-price">35 ج.م</span>
+                    <span class="discount-badge">حسب الاختيار</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%A7%D9%84%D9%85%D8%AE%D9%85%D8%B1%D9%8A%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: توزيعات كارت المرطب أو المخمرية أو التنت -->
+
+            <!-- بداية كارت منتج: قلم جوهرة أو وردة -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/jewel-flower-pen/1.jpg" alt="قلم جوهرة أو وردة"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <h4>قلم جوهرة أو وردة</h4>
+
+                <p style="font-size: 14px; color: #777;">قلم أنيق ومميز بتصميم جوهرة أو وردة مثبت على كارت إهداء راقٍ
+                    لتقديمه كهدية تذكارية لطيفة للمعلم.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">30 ج.م</span>
+                    <span class="new-price">30 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%82%D9%84%D9%85%20%D8%AC%D9%88%D9%87%D8%B1%D9%87%20%D8%A7%D9%88%20%D9%88%D8%B1%D8%AF%D9%87"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: قلم جوهرة أو وردة -->
+
+            <!-- بداية كارت منتج: كارت شوكليت -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/chocolate-card/1.jpg" alt="كارت شوكليت زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/chocolate-card/2.jpg" alt="كارت شوكليت زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>كارت شوكليت</h4>
+
+                <p style="font-size: 14px; color: #777;">كارت إهداء مميز يحتوي على قطعة شوكولاتة فاخرة ومن الخلف أوراق
+                    ملاحظات لاصقة (استيك نوت)، فكرة كرييتف ومبهجة جداً.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">45 ج.م</span>
+                    <span class="new-price">45 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%83%D8%A7%D8%B1%D8%AA%20%D8%B4%D9%88%D9%83%D9%84%D9%8A%D8%AA"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: كارت شوكليت -->
+
+            <!-- بداية كارت منتج: مرسال للمعلم -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/teacher-mersal/1.jpg" alt="مرسال للمعلم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mersal/2.jpg" alt="مرسال للمعلم زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mersal/3.jpg" alt="مرسال للمعلم زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mersal/4.jpg" alt="مرسال للمعلم زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>مرسال للمعلم</h4>
+
+                <p style="font-size: 14px; color: #777;">هدية قيمة بلمسة كلاسيكية، مرسال إهداء للمعلم ومتاح إضافة (استيك
+                    نوت / فاصل كتاب / ميدالية) داخل المرسال لتكتمل المفاجأة.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">35 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%B1%D8%B3%D8%A7%D9%84%20%D9%84%D9%84%D9%85%D8%B9%D9%84%D9%85%0A"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مرسال للمعلم -->
+
+            <!-- بداية كارت منتج: مج للمعلم -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/teacher-mug/1.jpg" alt="مج للمعلم تصميم 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mug/2.jpg" alt="مج للمعلم تصميم 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mug/3.jpg" alt="مج للمعلم تصميم 3" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mug/4.jpg" alt="مج للمعلم تصميم 4" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mug/5.jpg" alt="مج للمعلم تصميم 5" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/teacher-mug/6.jpg" alt="مج للمعلم تصميم 6" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>مج للمعلم</h4>
+
+                <p style="font-size: 14px; color: #777;">مج راقٍ للمعلم متوفر بأكثر من تصميم مميز وجذاب، هدية يومية
+                    تذكارية تعبر عن التقدير والامتنان.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D9%84%D9%84%D9%85%D8%B9%D9%84%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مج للمعلم -->
+
+            <!-- بداية كارت منتج: قلم مضيء بإضافة اسم المعلم / المعلمة -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/luminous-pen/1.jpg" alt="قلم مضيء بإضافة اسم المعلم / المعلمة زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/luminous-pen/2.jpg" alt="قلم مضيء بإضافة اسم المعلم / المعلمة زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/luminous-pen/3.jpg" alt="قلم مضيء بإضافة اسم المعلم / المعلمة زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/luminous-pen/4.jpg" alt="قلم مضيء بإضافة اسم المعلم / المعلمة زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/luminous-pen/5.jpg" alt="قلم مضيء بإضافة اسم المعلم / المعلمة زاوية 5"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>قلم مضيء بإضافة اسم المعلم / المعلمة</h4>
+
+                <p style="font-size: 14px; color: #777;">قلم مضيء ومميز متاح لتخصيصه بكتابة اسم المعلم أو المعلمة، هدية
+                    فريدة ومبتكرة تترك أثراً جميلاً.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">65 ج.م</span>
+                    <span class="new-price">65 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%82%D9%84%D9%85%20%D9%85%D8%B6%D9%8A%D8%A1%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: قلم مضيء بإضافة اسم المعلم / المعلمة -->
+
+            <!-- بداية كارت منتج: نوت بوك مسطرة -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/lined-notebook/1.jpg" alt="نوت بوك مسطرة" onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <h4>نوت بوك مسطرة</h4>
+
+                <p style="font-size: 14px; color: #777;">نوت بوك مسطرة بتصميم أنيق وعملي، مثالية لتدوين الملاحظات
+                    والخواطر وتنظيم المهام اليومية.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">35 ج.م</span>
+                    <span class="new-price">35 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%86%D9%88%D8%AA%20%D8%A8%D9%88%D9%83%20%D9%85%D8%B3%D8%B7%D8%B1%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: نوت بوك مسطرة -->
+
+            <!-- بداية كارت منتج: خاتم تسبيح -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/tasbih-ring/1.jpg" alt="خاتم تسبيح زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/tasbih-ring/2.jpg" alt="خاتم تسبيح زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/tasbih-ring/3.jpg" alt="خاتم تسبيح زاوية 3" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/tasbih-ring/4.jpg" alt="خاتم تسبيح زاوية 4" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>خاتم تسبيح</h4>
+
+                <p style="font-size: 14px; color: #777;">خاتم تسبيح رقمي بتصميم عملي ومريح، هدية دينية قيمة ومباركة تعبر
+                    عن التقدير والاهتمام.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">25 ج.م</span>
+                    <span class="new-price">25 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D8%AE%D8%A7%D8%AA%D9%85%20%D8%AA%D8%B3%D8%A8%D9%8A%D8%AD"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: خاتم تسبيح -->
+
+            <!-- بداية كارت منتج: ميدالية أذكار الصباح والمساء -->
+            <div class="product-card">
+
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/azkar-keychain/1.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/azkar-keychain/2.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/azkar-keychain/3.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/azkar-keychain/4.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/azkar-keychain/5.jpg" alt="ميدالية أذكار الصباح والمساء زاوية 5"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <h4>ميدالية أذكار الصباح والمساء</h4>
+
+                <p style="font-size: 14px; color: #777;">ميدالية أنيقة تحتوي على أذكار الصباح والمساء مكتوبة بخط واضح،
+                    هدية دينية قيمة ومباركة ترافق المعلم في يومه.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">25 ج.م</span>
+                    <span class="new-price">25 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%8A%D8%AF%D8%A7%D9%84%D9%8A%D8%A9%20%D8%A3%D8%B0%D9%83%D8%A7%D8%B1%20%D8%A7%D9%84%D8%B5%D8%A8%D8%A7%D8%AD%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: ميدالية أذكار الصباح والمساء -->
+            <!-- بداية كارت منتج: منظم أدوات / مج بايركس بشاليموه -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/organizer-mug/1.jpg" alt="منظم أدوات أو مج بايركس بشاليموه"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>منظم أدوات / مج بايركس بشاليموه 🗂️🥛</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">متاح باختيارين: منظم أدوات بسعر 65 ج.م. أو مج بايركس بشاليموه
+                    بسعر 90 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <!-- تم عرض السعرين بشكل منظم بدون شطب لملاءمة الأوبشنز -->
+                    <span class="old-price" style="text-decoration: none; color: #777; font-size: 14px;">منظم: 65
+                        ج.م</span>
+                    <span class="new-price">مج: 90 ج.م</span>
+                    <span class="discount-badge" style="display: none;">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%86%D8%B8%D9%85%20%D8%A3%D8%AF%D9%88%D8%A7%D8%AA%20%D8%A3%D9%88%20%D9%85%D8%AC%20%D8%A8%D8%A7%D9%8A%D8%B1%D9%83%D8%B3%20%D8%A8%D8%B4%D8%A7%D9%84%D9%8A%D9%85%D9%88%D9%87"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: منظم أدوات / مج بايركس بشاليموه -->
+            <!-- بداية كارت منتج: منظم أدوات / مج بورسلين -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/organizer-porcelain-mug/1.jpg" alt="منظم أدوات أو مج بورسلين"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>منظم أدوات / مج بورسلين 🗂️☕</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">متاح باختيارين: منظم أدوات بسعر 65 ج.م. أو مج بورسلين بسعر 155
+                    ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <!-- عرض السعرين بوضوح للأوبشنز وبدون شطب -->
+                    <span class="old-price" style="text-decoration: none; color: #777; font-size: 14px;">منظم: 65
+                        ج.م</span>
+                    <span class="new-price">مج: 155 ج.م</span>
+                    <span class="discount-badge" style="display: none;">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D9%86%D8%B8%D9%85%20%D8%A3%D8%AF%D9%88%D8%A7%D8%AA%20%D8%A3%D9%88%20%D9%85%D8%AC%20%D8%A8%D9%88%D8%B1%D8%B3%D9%84%D9%8A%D9%86"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: منظم أدوات / مج بورسلين -->
+            <!-- بداية كارت منتج: مج بايركس ماسك جلد بكتابة اسم المعلم -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورتين) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/pyrex-leather-mug/1.jpg"
+                            alt="مج بايركس ماسك جلد بكتابة اسم المعلم زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/pyrex-leather-mug/2.jpg"
+                            alt="مج بايركس ماسك جلد بكتابة اسم المعلم زاوية 2" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>مج بايركس ماسك جلد بكتابة اسم المعلم 🥛💼</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">مج بايركس ماسك جلد بكتابة اسم المعلم بسعر 90 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">90 ج.م</span>
+                    <span class="new-price">90 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A8%D8%A7%D9%8A%D8%B1%D9%83%D8%B3%20%D9%85%D8%A7%D8%B3%D9%83%20%D8%AC%D9%84%D8%AF%20%D8%A8%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%20%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: مج بايركس ماسك جلد بكتابة اسم المعلم -->
+            <!-- بداية كارت منتج: كارت ميني روج -->
+            <div class="product-card">
+
+                <!-- 1. حاوية السلايدر (صورتين) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/teacher/mini-lipstick-card/1.jpg" alt="كارت ميني روج زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/teacher/mini-lipstick-card/2.jpg" alt="كارت ميني روج زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 2. اسم المنتج -->
+                <h4>كارت ميني روج 💄</h4>
+
+                <!-- 3. وصف المنتج -->
+                <p style="font-size: 14px; color: #777;">كارت ميني روج بسعر 50 ج.م.</p>
+
+                <!-- 4. خانة الأسعار والخصم -->
+                <div class="product-price-box">
+                    <span class="old-price">50 ج.م</span>
+                    <span class="new-price">50 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%83%D8%A7%D8%B1%D8%AA%20%D9%85%D9%8A%D9%86%D9%8A%20%D8%B1%D9%88%D8%AC"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت منتج: كارت ميني روج -->
+
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img loading="lazy" class="modal-content" id="imgFull">
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="#" class="order-btn" target="_blank" style="text-decoration: none;">
+                <i class="fas fa-shopping-cart"></i> انتقل للطلب فوراً
+            </a>
+        </div>
+    </div>
+
+    <footer style="width: 100%; background-color: #0b5b73; margin: 0; padding: 15px 0; box-sizing: border-box;">
+        <div
+            style="display: flex; align-items: center; justify-content: center; gap: 15px; direction: ltr; width: 100%;">
+            <img loading="lazy" src="images/copy/copy.jpg" alt="Eng. Yossef Mohamed" onclick="openModal(this)"
+                style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid white; object-fit: cover; cursor: pointer; flex-shrink: 0;">
+            <p
+                style="margin: 0; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; line-height: 1.4; color: white;">
+                Designed & Developed by <strong>Eng. Yossef Mohamed</strong><br>
+                <span style="font-size: 12px; color: #eee;">Copyright © 2026</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // 1️⃣ دالة السلايدر الذكي مع اللف اللانهائي (Infinity Loop) المتوافقة مع العربي
+        function moveSlider(button, direction) {
+            const slider = button.parentElement.querySelector('.product-slider');
+            const images = slider.querySelectorAll('img');
+            const totalImages = images.length;
+            const scrollAmount = slider.clientWidth;
+
+            let currentIndex = Math.round(Math.abs(slider.scrollLeft) / scrollAmount);
+
+            if (direction === -1) {
+                currentIndex++;
+            } else {
+                currentIndex--;
+            }
+
+            if (currentIndex >= totalImages) {
+                slider.scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            } else if (currentIndex < 0) {
+                slider.scrollTo({
+                    left: -scrollAmount * (totalImages - 1),
+                    behavior: 'smooth'
+                });
+            } else {
+                slider.scrollTo({
+                    left: -scrollAmount * currentIndex,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // 2️⃣ دالة فتح المودال وتكبير الصورة (تم تعديلها لحمايتك من البيع الفوري 😂)
+        function openModal(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("imgFull");
+
+            modal.style.display = "block";
+            modalImg.src = element.src;
+
+            // بنلقط زرار الانتقال اللي جوه المودال الكبيرة
+            const modalOrderBtn = document.querySelector('#imageModal .order-btn') || document.querySelector('#imageModal a');
+
+            // بنشيك: هل الصورة المفتوحة دي موجودة جوه كارت منتج؟
+            const productCard = element.closest('.product-card');
+
+            if (productCard && modalOrderBtn) {
+                // لو صورة منتج: بنلقط زرار الواتساب المشفر ونظهره فوراً
+                const originalOrderBtn = productCard.querySelector('.order-btn');
+                if (originalOrderBtn) {
+                    modalOrderBtn.href = originalOrderBtn.href;
+                    modalOrderBtn.style.display = "inline-block"; // إظهار الزرار للمنتجات
+                }
+            } else if (modalOrderBtn) {
+                // 🔒 حماية البشمهندس: لو صورتك أنت اللي فتحت (برة الكروت)، اخفي الزرار تماماً!
+                modalOrderBtn.style.display = "none";
+            }
+        }
+
+        // 3️⃣ دالة إغلاق المودال بالزرار الخاص به (X)
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        // 4️⃣ إغلاق المودال تلقائياً لو العميل داس في أي حتة فاضية برا الصورة
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // 📱 5️⃣ سكريبت التاتش والموبايل الذكي لفتح القائمة وتشغيل الحركات باللمس
+        document.querySelectorAll('.dropdown-content a').forEach(link => {
+            // أول ما صباعه يلمس الشاشة
+            link.addEventListener('touchstart', function () {
+                this.classList.add('touch-active');
+            });
+
+            // أول ما صباعه يترفع أو يتحرك بالسكرول شيل الحركة بنعومة
+            link.addEventListener('touchend', function () {
+                setTimeout(() => {
+                    this.classList.remove('touch-active');
+                }, 150); // تأخير بسيط عشان عينه تلمح الحركة الذهبية
+            });
+        });
+
+        // حركة صايعة: لو داس على كلمة "الأصناف" نفسها في الموبايل تفتح وتقفل القائمة بسلاسة
+        const dropdownLink = document.querySelector('.dropdown > a');
+        if (dropdownLink) {
+            dropdownLink.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) { // شاشات الموبايل والتابلت بس
+                    e.preventDefault(); // نمنع اللينك يرفع الصفحة لفوق
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        }
+
+        // لو داس في أي حتة فاضية برة القائمة يقفلها فوراً في الموبايل
+        window.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+            }
+        });
+    </script>
+    <!-- زرار العودة لأعلى الصفحة (مترحل لليمين ومرفوع فوق الفوتر والواتساب) -->
+    <button id="backToTopBtn" onclick="scrollToTop()" title="العودة لأعلى الصفحة"
+        style="display: none; position: fixed; bottom: 95px; right: 25px; z-index: 9999; border: none; outline: none; background-color: #0b5b73; color: white; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease; opacity: 0.85;">
+        ▲
+    </button>
+
+    <script>
+        const topBtn = document.getElementById("backToTopBtn");
+
+        function handleScroll() {
+            if (window.pageYOffset > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.style.display = "block";
+                setTimeout(() => {
+                    topBtn.style.opacity = "0.85";
+                    topBtn.style.transform = "translateY(0)";
+                }, 10);
+            } else {
+                topBtn.style.opacity = "0";
+                topBtn.style.transform = "translateY(10px)";
+                setTimeout(() => {
+                    if (window.pageYOffset <= 300) topBtn.style.display = "none";
+                }, 300);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('touchmove', handleScroll, { passive: true });
+        window.addEventListener('wheel', handleScroll, { passive: true });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        topBtn.onmouseover = function () {
+            this.style.backgroundColor = "#ff1493";
+            this.style.transform = "scale(1.1)";
+            this.style.opacity = "1";
+        }
+        topBtn.onmouseout = function () {
+            this.style.backgroundColor = "#0b5b73";
+            this.style.transform = "scale(1)";
+            this.style.opacity = "0.85";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="الحديقة السرية، متجر هدايا، نوتات، تنسيق هدايا، هدايا، مجات، مج بورسلين">
+    <meta name="author" content="Eng.Yossef Mohamed" />
+    <meta name="description"
+        content="الْحَدِيقَةُ السِّرِّيَّةُ مساحةٌ تنبضُ بالمعاني الجميلة - قسم المجات المميزة وهدايا البورسلين المصنوعة بكل حب لتكون أثراً طيباً يبقى في القلوب." />
+
+    <!-- 1. اللوجو في تاب المتصفح (Favicon) بالمسار المظبوط -->
+    <link rel="icon" type="image/jpeg" href="images/logo/1.jpg">
+
+    <!-- 2. كروت المعاينة لصفحة المجات (Open Graph Meta Tags) -->
+    <meta property="og:title" content="المجات - الحديقة السرية" />
+    <meta property="og:description"
+        content="تصفح تشكيلة مميزة من المجات الفاخرة وهدايا البورسلين المصنوعة بكل حب لتترك أثراً طيباً في القلوب." />
+    <meta property="og:image" content="images/logo/1.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- 3. ملفات التنسيق والأيقونات -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>المجات - الحديقة السرية</title>
+</head>
+
+<body>
+
+    <header>
+        <h1> الْحَدِيقَةُ السِّرِّيَّةُ </h1>
+        <p>أَثَرٌ يَبْقَى فِي الْقُلُوبِ</p>
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">من منتجاتنا</a>
+
+        <div class="dropdown">
+            <a href="#" class="active">الأصناف <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="package.html">باكيدج</a>
+                <a href="hijab-party.html"> توزيعات حفل حجاب</a>
+                <a href="teacher.html">توزيعات معلم</a>
+                <a href="quran-teacher.html">توزيعات معلم القرآن</a>
+                <a href="back-to-school.html">توزيعات العوده للمدرسه</a>
+                <a href="school-friends.html">توزيعات لأصدقاء المدرسة</a>
+                <a href="students.html">توزيعات للطلاب</a>
+                <a href="sebou.html">توزيعات سبوع</a>
+                <a href="mugs.html">المجات</a>
+                <a href="stationery.html">أدوات مكتبية</a>
+                <a href="ramadan.html">توزيعات رمضانية</a>
+                <a href="eid-fitr.html">توزيعات عيد الفطر</a>
+                <a href="eid-adha.html">توزيعات عيد الأضحى</a>
+
+            </div>
+        </div>
+
+        <a href="about.html">من نحن</a>
+
+        <div class="dropdown">
+            <a href="#">اتصل بنا <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+            <div class="dropdown-content">
+                <a href="https://wa.me/201118647458?text=استفسار" target="_blank" class="nav-whatsapp">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </a>
+                <a href="https://www.facebook.com/share/L6hiGmFAHGzEhfyb/?mibextid=A7sQZp" target="_blank"
+                    class="nav-facebook">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                </a>
+                <a href="https://www.instagram.com/thesecretgarden_50?igsh=aHc4M3ZqeXlzMWlj" target="_blank"
+                    class="nav-instagram">
+                    <i class="fab fa-instagram"></i> إنستجرام
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>قسم المجات ☕</h2>
+
+        <!-- هنا هترص كروت المجات اللي هنعملها سوا -->
+        <div class="product-container">
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/red-hearts-colored-mug/1.jpg"
+                            alt="مج القلوب الحمراء بإسم الشخص اليد والداخل ملون زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/red-hearts-colored-mug/2.jpg"
+                            alt="مج القلوب الحمراء بإسم الشخص اليد والداخل ملون زاوية 2" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج القلوب الحمراء بإسم الشخص (اليد والداخل ملون) ❤️☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج قلوب حمراء مخصص بالاسم مع يد وداخلية ملونة بسعر 175 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">175 ج.م</span>
+                    <span class="new-price">175 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D9%82%D9%84%D9%88%D8%A8%20%D8%A7%D9%84%D8%AD%D9%85%D8%B1%D8%A7%D8%A1%20%D8%A8%D8%A5%D8%B3%D9%85%20%D8%A7%D9%84%D8%B4%D8%AE%D8%B5%20%D8%A7%D9%84%D9%8A%D8%AF%20%D9%88%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D9%84%D9%88%D9%86"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/hearts-no-name-mug/1.jpg" alt="مج قلوب بدون اسم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/hearts-no-name-mug/2.jpg" alt="مج قلوب بدون اسم زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج قلوب بدون اسم ❤️☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج قلوب أنيق بتصميم مميز وبدون تخصيص اسم بسعر 175 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">175 ج.م</span>
+                    <span class="new-price">175 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D9%82%D9%84%D9%88%D8%A8%20%D8%A8%D8%AF%D9%88%D9%86%20%D8%A7%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/pink-sheep-mug/1.jpg" alt="مج خروف بينك" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج خروف بينك 🐑💖</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم خروف كرتوني مميز باللون البينك بسعر 175 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">175 ج.م</span>
+                    <span class="new-price">175 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%AE%D8%B1%D9%88%D9%81%20%D8%A8%D9%8A%D9%86%D9%83"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/im-just-a-girl-mug/1.jpg" alt="مج I'm just a girl"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج I'm just a girl 🎀☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم تريندي مميز بعبارة I'm just a girl بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20I%27m%20just%20a%20girl" class="order-btn"
+                    target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/friends-designs-mug/1.jpg" alt="مجموعة تصاميم للأصدقاء زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-designs-mug/2.jpg" alt="مجموعة تصاميم للأصدقاء زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-designs-mug/3.jpg" alt="مجموعة تصاميم للأصدقاء زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-designs-mug/4.jpg" alt="مجموعة تصاميم للأصدقاء زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-designs-mug/5.jpg" alt="مجموعة تصاميم للأصدقاء زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-designs-mug/6.jpg" alt="مجموعة تصاميم للأصدقاء زاوية 6"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مجموعة تصاميم للأصدقاء 👥☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">تشكيلة مميزة من تصاميم المجات المخصصة للأصدقاء بسعر 155 ج.م.
+                </p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D8%AA%D8%B5%D8%A7%D9%85%D9%8A%D9%85%20%D9%84%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (5 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/friends-2-mug/1.jpg" alt="مج الأصدقاء 2 زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-2-mug/2.jpg" alt="مج الأصدقاء 2 زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-2-mug/3.jpg" alt="مج الأصدقاء 2 زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-2-mug/4.jpg" alt="مج الأصدقاء 2 زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/friends-2-mug/5.jpg" alt="مج الأصدقاء 2 زاوية 5"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الأصدقاء 2 👥☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم مميز ومخصص للأصدقاء "الإصدار الثاني" لمشاركة أجمل
+                    الذكريات بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1%202"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (صورتين بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/sadiqa-3-pink-handle-mug/1.jpg"
+                            alt="مج الصديقة 3 بورسلين بيد بينك زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/sadiqa-3-pink-handle-mug/2.jpg"
+                            alt="مج الصديقة 3 بورسلين بيد بينك زاوية 2" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الصديقة 3 (بيد بينك) 👭💗☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بورسلين راقي بتصميم "الصديقة - الإصدار الثالث" يتميز بيد
+                    باللون البينك اللطيف بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D8%B5%D8%AF%D9%8A%D9%82%D8%A9%203%20%D8%A8%D9%8A%D8%AF%20%D8%A8%D9%8A%D9%86%D9%83"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/white-name-mug/1.jpg" alt="مج بالإسم أبيض" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج بالإسم أبيض 🤍☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بورسلين أبيض كلاسيكي مخصص بالإسم حسب اختيارك بسعر 155 ج.م.
+                </p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A8%D8%A7%D9%84%D8%A5%D8%B3%D9%85%20%D8%A3%D8%A8%D9%8A%D8%B6"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/personal-photo-white-mug/1.jpg" alt="مج بالصورة الشخصية أبيض زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/personal-photo-white-mug/2.jpg" alt="مج بالصورة الشخصية أبيض زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/personal-photo-white-mug/3.jpg" alt="مج بالصورة الشخصية أبيض زاوية 3"
+                            onclick="openModal(this)">
+
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج بالصورة الشخصية أبيض 📸☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بورسلين أبيض مخصص بطباعة صورتك الشخصية بجودة عالية بسعر 155
+                    ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.m</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1%D8%A9%20%D8%A7%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9%20%D8%A3%D8%A8%D9%8A%D8%B6"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (5 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/bow-name-mug/1.jpg" alt="مج الفيونكة بالإسم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bow-name-mug/2.jpg" alt="مج الفيونكة بالإسم زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bow-name-mug/3.jpg" alt="مج الفيونكة بالإسم زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bow-name-mug/4.jpg" alt="مج الفيونكة بالإسم زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bow-name-mug/5.jpg" alt="مج الفيونكة بالإسم زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bow-name-mug/6.jpg" alt="مج الفيونكة بالإسم زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bow-name-mug/7.jpg" alt="مج الفيونكة بالإسم زاوية 5"
+                            onclick="openModal(this)">
+
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الفيونكة بالإسم 🎀☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم الفيونكة التريندي الأنيق مخصص بالإسم حسب اختيارك بسعر
+                    155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D9%81%D9%8A%D9%88%D9%86%D9%83%D8%A9%20%D8%A8%D8%A7%D9%84%D8%A5%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية الصورة (بدون أزرار سلايدر لأنها صورة واحدة) -->
+                <div class="slider-wrapper">
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/roses-white-mug/1.jpg" alt="مج الورود بورسلين أبيض"
+                            onclick="openModal(this)">
+                    </div>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الورود بورسلين أبيض 🌸☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بورسلين أبيض راقي ومزين بنقوش الورود الهادئة بسعر 155 ج.م.
+                </p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D9%88%D8%B1%D9%88%D8%AF"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (4 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/zamalek-player-mug/1.jpg" alt="مج لاعب الزمالك بالإسم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/zamalek-player-mug/2.jpg" alt="مج لاعب الزمالك بالإسم زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/zamalek-player-mug/3.jpg" alt="مج لاعب الزمالك بالإسم زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/zamalek-player-mug/4.jpg" alt="مج لاعب الزمالك بالإسم زاوية 4"
+                            onclick="openModal(this)">
+
+
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج لاعب الزمالك بالإسم 🏹🇦🇹</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج لعشاق نادي الزمالك بتصميم مخصص باسم اللاعب والاسم الشخصي حسب
+                    اختيارك بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D9%84%D8%A7%D8%B9%D8%A8%20%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83%20%D8%A8%D8%A7%D9%84%D8%A5%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (8 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/1.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/2.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/3.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 3" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/4.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 4" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/5.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 5" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/6.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 6" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/7.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 7" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/diverse-designs-name-mugs/8.jpg"
+                            alt="مجموعة تصميمات متنوعة بالإسم زاوية 8" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مجموعة تصميمات متنوعة بالإسم ✨☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">تشكيلة واسعة ومتنوعة من أرقى تصاميم المجات المخصصة بالأسماء،
+                    السعر يختلف حسب نوع المج والتصميم المختار.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">-</span>
+                    <span class="new-price">حسب التصميم</span>
+                    <span class="discount-badge">متغير</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%D8%A7%D8%AA%20%D9%85%D8%AA%D9%86%D9%88%D8%B9%D8%A9%20%D8%A8%D8%A7%D9%84%D8%A5%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (4 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/female-doctor-mug/1.jpg" alt="مج الطبيبة زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/female-doctor-mug/2.jpg" alt="مج الطبيبة زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/female-doctor-mug/3.jpg" alt="مج الطبيبة زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/female-doctor-mug/4.jpg" alt="مج الطبيبة زاوية 4"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الطبيبة 👩‍⚕️🩺</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم راقي مخصص للطبيبات وخريجات المجال الطبي بالإسم
+                    والتخصص بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A8%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (3 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/ashter-katkoot-colored-mug/1.jpg"
+                            alt="مج أشطر كتكوت ملون من الداخل زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/ashter-katkoot-colored-mug/2.jpg"
+                            alt="مج أشطر كتكوت ملون من الداخل زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/ashter-katkoot-colored-mug/3.jpg"
+                            alt="مج أشطر كتكوت ملون من الداخل زاوية 3" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج أشطر كتكوت (ملون من الداخل) 🐣☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم "أشطر كتكوت" المبهج مع يد وداخلية ملونة بجودة ممتازة
+                    بسعر 175 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">175 ج.م</span>
+                    <span class="new-price">175 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A3%D8%B4%D8%B7%D8%B1%20%D9%83%D8%AA%D9%83%D9%88%D8%AA"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (6 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/dija-colored-mug/1.jpg" alt="مج ديجا ملون من الداخل زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/dija-colored-mug/2.jpg" alt="مج ديجا ملون من الداخل زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/dija-colored-mug/3.jpg" alt="مج ديجا ملون من الداخل زاوية 3"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/dija-colored-mug/4.jpg" alt="مج ديجا ملون من الداخل زاوية 4"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/dija-colored-mug/5.jpg" alt="مج ديجا ملون من الداخل زاوية 5"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/dija-colored-mug/6.jpg" alt="مج ديجا ملون من الداخل زاوية 6"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج ديجا (ملون من الداخل) 💜☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج مميز مخصص باسم "ديجا" مع يد وداخلية ملونة بجودة طباعة ممتازة
+                    بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%AF%D9%8A%D8%AC%D8%A7%20%D9%85%D9%84%D9%88%D9%86%20%D9%85%D9%86%20%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (4 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/strong-independent-ayota-colored-mug/1.jpg"
+                            alt="مج استرونج اندبندت عيوطة ملون من الداخل زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/strong-independent-ayota-colored-mug/2.jpg"
+                            alt="مج استرونج اندبندت عيوطة ملون من الداخل زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/strong-independent-ayota-colored-mug/3.jpg"
+                            alt="مج استرونج اندبندت عيوطة ملون من الداخل زاوية 3" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/strong-independent-ayota-colored-mug/4.jpg"
+                            alt="مج استرونج اندبندت عيوطة ملون من الداخل زاوية 4" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج استرونج اندبندت عيوطة (ملون من الداخل) 😭💪☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم كوميدي تريندي "Strong Independent Woman عيوطة" مع يد
+                    وداخلية ملونة بسعر 175 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">175 ج.م</span>
+                    <span class="new-price">175 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D8%B3%D8%AA%D8%B1%D9%88%D9%86%D8%AC%20%D8%A7%D9%86%D8%AF%D8%A8%D9%86%D8%AF%D8%AA%20%D8%B9%D9%8A%D9%88%D8%B7%D8%A9%20%D9%85%D9%84%D9%88%D9%86%20%D9%85%D9%86%20%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (3 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/butterfly-mug/1.jpg" alt="مج الفراشة زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/butterfly-mug/2.jpg" alt="مج الفراشة زاوية 2" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/butterfly-mug/3.jpg" alt="مج الفراشة زاوية 3" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الفراشة 🦋☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم فراشة رقيق ومبهج يضفي لمسة جمالية ساحرة على مشروبك
+                    المفضل بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D8%B4%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (3 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/lam-tokhlaki-letatasalla-mug/1.jpg" alt="مج لم تخلقِ لتتسلى زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/lam-tokhlaki-letatasalla-mug/2.jpg" alt="مج لم تخلقِ لتتسلى زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/lam-tokhlaki-letatasalla-mug/3.jpg" alt="مج لم تخلقِ لتتسلى زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج لم تخلقِ لتتسلى 📖☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم عميق وهادف يحمل عبارة "لم تخلقِ لتتسلى" بخط عربي أنيق
+                    بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D9%84%D9%85%20%D8%AA%D8%AE%D9%84%D9%82%20%D9%84%D8%AA%D8%AA%D8%B3%D9%84%D9%8A"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (3 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/unicorn-name-mug/1.jpg" alt="مج اليونيكورن بالإسم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/unicorn-name-mug/2.jpg" alt="مج اليونيكورن بالإسم زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/unicorn-name-mug/3.jpg" alt="مج اليونيكورن بالإسم زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج اليونيكورن بالإسم 🦄✨☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم يونيكورن سحري ومبهج مخصص بالإسم حسب اختيارك بسعر 155
+                    ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D9%8A%D9%88%D9%86%D9%8A%D9%83%D9%88%D8%B1%D9%86%20%D8%A8%D8%A7%D9%84%D8%A5%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (صورتين بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/girl-name-mug/1.jpg" alt="مج الفتاة بالإسم زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/girl-name-mug/2.jpg" alt="مج الفتاة بالإسم زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الفتاة بالإسم 👩‍🦰✨☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم رقيق وأنثوي مميز مخصص بالإسم حسب اختيارك بسعر 155
+                    ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D9%81%D8%AA%D8%A7%D8%A9%20%D8%A8%D8%A7%D9%84%D8%A5%D8%B3%D9%85"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (صورتين بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/purple-butterflies-mug/1.jpg" alt="مج الفراشات البنفسجي زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/purple-butterflies-mug/2.jpg" alt="مج الفراشات البنفسجي زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الفراشات البنفسجي 🦋💜☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم فراشات بنفسجية مبهجة وأنيقة تضفي لمسة جمالية فريدة
+                    بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D8%B4%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%86%D9%81%D8%B3%D8%AC%D9%8A"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (صورتين بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/rabbit-mug/1.jpg" alt="مج الأرنب زاوية 1" onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/rabbit-mug/2.jpg" alt="مج الأرنب زاوية 2" onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الأرنب 🐰☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتتصميم أرنب لطيف ومميز يضفي لمسة مبهجة على مشروبك المفضل
+                    بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D8%A3%D8%B1%D9%86%D8%A8"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (صورتين بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/rafeeqa-colored-handle-mug/1.jpg" alt="مج الرفيقة يد ملونة زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/rafeeqa-colored-handle-mug/2.jpg" alt="مج الرفيقة يد ملونة زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج الرفيقة (يد ملونة) 💖☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بورسلين راقي بتصميم "الرفيقة" المميز مع يد ملونة تضفي لمسة
+                    جمالية مبهجة بسعر 175 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">175 ج.م</span>
+                    <span class="new-price">175 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%A7%D9%84%D8%B1%D9%81%D9%8A%D9%82%D8%A9%20%D9%8A%D8%AF%20%D9%85%D9%84%D9%88%D9%86%D8%A9"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (3 صور بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/bashaer-batch-mug/1.jpg" alt="مج دفعة البشائر زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bashaer-batch-mug/2.jpg" alt="مج دفعة البشائر زاوية 2"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/bashaer-batch-mug/3.jpg" alt="مج دفعة البشائر زاوية 3"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج دفعة البشائر 🎓✨☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج بتصميم مميز وأنيق خاص بدفعة البشائر لتخليد أجمل ذكريات
+                    الدراسة والتخرج بسعر 155 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">155 ج.م</span>
+                    <span class="new-price">155 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D8%AF%D9%81%D8%B9%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B4%D8%A7%D8%A6%D8%B1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+            <!-- 1. بداية كارت المنتج -->
+            <div class="product-card">
+
+                <!-- 2. حاوية السلايدر (صورتين بوجود الأسهم) -->
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev-btn" onclick="moveSlider(this, -1)">&#10094;</button>
+
+                    <div class="product-slider">
+                        <img loading="lazy" src="images/mugs/red-heart-handle-mug/1.jpg" alt="مج يد قلب أحمر زاوية 1"
+                            onclick="openModal(this)">
+                        <img loading="lazy" src="images/mugs/red-heart-handle-mug/2.jpg" alt="مج يد قلب أحمر زاوية 2"
+                            onclick="openModal(this)">
+                    </div>
+
+                    <button class="slider-arrow next-btn" onclick="moveSlider(this, 1)">&#10095;</button>
+                </div>
+
+                <!-- 3. اسم المنتج -->
+                <h4>مج يد قلب أحمر ❤️☕</h4>
+
+                <!-- 4. وصف المنتج والأسعار -->
+                <p style="font-size: 14px; color: #777;">مج أنيق ومميز مصمم بيد على شكل قلب باللون الأحمر الجذاب ليعبر
+                    عن الحب والاهتمام بسعر 195 ج.م.</p>
+
+                <div class="product-price-box">
+                    <span class="old-price">195 ج.م</span>
+                    <span class="new-price">195 ج.م</span>
+                    <span class="discount-badge">خصم 0%</span>
+                </div>
+
+                <!-- 5. زرار طلب المنتج -->
+                <a href="https://wa.me/201118647458?text=%D9%85%D8%AC%20%D9%8A%D8%AF%20%D9%82%D9%84%D8%A8%20%D8%A3%D8%AD%D9%85%D8%B1"
+                    class="order-btn" target="_blank">
+                    <i class="fas fa-shopping-cart"></i> اطلب الآن
+                </a>
+
+            </div>
+            <!-- نهاية كارت المنتج -->
+
+
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img loading="lazy" class="modal-content" id="imgFull">
+        <div style="text-align: center; margin-top: 15px;">
+            <a href="#" class="order-btn" target="_blank" style="text-decoration: none;">
+                <i class="fas fa-shopping-cart"></i> انتقل للطلب فوراً
+            </a>
+        </div>
+    </div>
+
+    <footer style="width: 100%; background-color: #0b5b73; margin: 0; padding: 15px 0; box-sizing: border-box;">
+        <div
+            style="display: flex; align-items: center; justify-content: center; gap: 15px; direction: ltr; width: 100%;">
+            <img loading="lazy" src="images/copy/copy.jpg" alt="Eng. Yossef Mohamed" onclick="openModal(this)"
+                style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid white; object-fit: cover; cursor: pointer; flex-shrink: 0;">
+            <p
+                style="margin: 0; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; line-height: 1.4; color: white;">
+                Designed & Developed by <strong>Eng. Yossef Mohamed</strong><br>
+                <span style="font-size: 12px; color: #eee;">Copyright © 2026</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function moveSlider(button, direction) {
+            const slider = button.parentElement.querySelector('.product-slider');
+            const images = slider.querySelectorAll('img');
+            const totalImages = images.length;
+            const scrollAmount = slider.clientWidth;
+
+            let currentIndex = Math.round(Math.abs(slider.scrollLeft) / scrollAmount);
+
+            if (direction === -1) {
+                currentIndex++;
+            } else {
+                currentIndex--;
+            }
+
+            if (currentIndex >= totalImages) {
+                slider.scrollTo({ left: 0, behavior: 'smooth' });
+            } else if (currentIndex < 0) {
+                slider.scrollTo({ left: -scrollAmount * (totalImages - 1), behavior: 'smooth' });
+            } else {
+                slider.scrollTo({ left: -scrollAmount * currentIndex, behavior: 'smooth' });
+            }
+        }
+
+        function openModal(element) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("imgFull");
+
+            modal.style.display = "block";
+            modalImg.src = element.src;
+
+            const modalOrderBtn = document.querySelector('#imageModal .order-btn') || document.querySelector('#imageModal a');
+            const productCard = element.closest('.product-card');
+
+            if (productCard && modalOrderBtn) {
+                const originalOrderBtn = productCard.querySelector('.order-btn');
+                if (originalOrderBtn) {
+                    modalOrderBtn.href = originalOrderBtn.href;
+                    modalOrderBtn.style.display = "inline-block";
+                }
+            } else if (modalOrderBtn) {
+                modalOrderBtn.style.display = "none";
+            }
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.querySelectorAll('.dropdown-content a').forEach(link => {
+            link.addEventListener('touchstart', function () {
+                this.classList.add('touch-active');
+            });
+            link.addEventListener('touchend', function () {
+                setTimeout(() => { this.classList.remove('touch-active'); }, 150);
+            });
+        });
+
+        const dropdownLink = document.querySelector('.dropdown > a');
+        if (dropdownLink) {
+            dropdownLink.addEventListener('click', function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                }
+            });
+        }
+
+        window.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+            }
+        });
+    </script>
+
+    <button id="backToTopBtn" onclick="scrollToTop()" title="العودة لأعلى الصفحة"
+        style="display: none; position: fixed; bottom: 95px; right: 25px; z-index: 9999; border: none; outline: none; background-color: #0b5b73; color: white; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease; opacity: 0.85;">
+        ▲
+    </button>
+
+    <script>
+        const topBtn = document.getElementById("backToTopBtn");
+
+        function handleScroll() {
+            if (window.pageYOffset > 300 || document.documentElement.scrollTop > 300) {
+                topBtn.style.display = "block";
+                setTimeout(() => {
+                    topBtn.style.opacity = "0.85";
+                    topBtn.style.transform = "translateY(0)";
+                }, 10);
+            } else {
+                topBtn.style.opacity = "0";
+                topBtn.style.transform = "translateY(10px)";
+                setTimeout(() => {
+                    if (window.pageYOffset <= 300) topBtn.style.display = "none";
+                }, 300);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('touchmove', handleScroll, { passive: true });
+        window.addEventListener('wheel', handleScroll, { passive: true });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        topBtn.onmouseover = function () {
+            this.style.backgroundColor = "#ff1493";
+            this.style.transform = "scale(1.1)";
+            this.style.opacity = "1";
+        }
+        topBtn.onmouseout = function () {
+            this.style.backgroundColor = "#0b5b73";
+            this.style.transform = "scale(1)";
+            this.style.opacity = "0.85";
+        }
+    </script>
+</body>
+
+</html>
