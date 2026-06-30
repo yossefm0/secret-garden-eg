@@ -83,7 +83,7 @@
 
         <div class="product-container">
             <!-- بداية كارت منتج: توزيعات هاي لايتر -->
-            <div class="product-card">
+            <div class="product-card" id="p-121">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة — بدون أزرار) -->
                 <div class="slider-wrapper">
@@ -117,7 +117,7 @@
             </div>
             <!-- نهاية كارت منتج: توزيعات هاي لايتر -->
             <!-- بداية كارت منتج: قلم هاي لايتر -->
-            <div class="product-card">
+            <div class="product-card" id="p-122">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة) -->
                 <div class="slider-wrapper">
@@ -149,7 +149,7 @@
             </div>
             <!-- نهاية كارت منتج: قلم هاي لايتر -->
             <!-- بداية كارت منتج: كارت استيكه روج -->
-            <div class="product-card">
+            <div class="product-card" id="p-123">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة — بدون أزرار) -->
                 <div class="slider-wrapper">
@@ -183,7 +183,7 @@
             </div>
             <!-- نهاية كارت منتج: كارت استيكه روج -->
             <!-- بداية كارت منتج: كارت استيكه -->
-            <div class="product-card">
+            <div class="product-card" id="p-124">
 
                 <!-- 1. حاوية السلايدر (صورتين) -->
                 <div class="slider-wrapper">
@@ -221,7 +221,7 @@
             </div>
             <!-- نهاية كارت منتج: كارت استيكه -->
             <!-- بداية كارت منتج: قلم سنون مميز -->
-            <div class="product-card">
+            <div class="product-card" id="p-125">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة) -->
                 <div class="slider-wrapper">
@@ -252,7 +252,7 @@
             </div>
             <!-- نهاية كارت منتج: قلم سنون مميز -->
             <!-- بداية كارت منتج: قلم جيل -->
-            <div class="product-card">
+            <div class="product-card" id="p-126">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة) -->
                 <div class="slider-wrapper">
@@ -283,7 +283,7 @@
             </div>
             <!-- نهاية كارت منتج: قلم جيل -->
             <!-- بداية كارت منتج: توكه منقار -->
-            <div class="product-card">
+            <div class="product-card" id="p-127">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة) -->
                 <div class="slider-wrapper">
@@ -446,8 +446,23 @@
                 document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
             }
         });
+
+        // 🔗 6️⃣ سكريبت ربط روابط المنتجات المباشرة بأزرار الواتساب تلقائياً بالـ ID الرقمي التسلسلي
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.product-card').forEach(card => {
+                let productId = card.id; // بيلقط الـ id بتاع الكارت (زي p-1 أو p-2)
+                let currentUrl = window.location.href.split('#')[0]; // رابط الصفحة الحالية نقي بدون هاش قديم
+                let button = card.querySelector('.order-btn'); // بيمسك زرار اطلب الآن الخاص بالكارت ده
+
+                if (button && productId) {
+                    let exactProductUrl = `${currentUrl}#${productId}`;
+                    // بيسيب شفرتك القديمة المشفرة زي ما هي وبيلزق في آخرها الرابط المباشر للمنتج
+                    button.href += encodeURIComponent(`\n\n🔗 رابط المنتج المباشر:\n${exactProductUrl}`);
+                }
+            });
+        });
     </script>
-    <!-- زرار العودة لأعلى الصفحة (مترحل لليمين ومرفوع فوق الفوتر والواتساب) -->
+
     <button id="backToTopBtn" onclick="scrollToTop()" title="العودة لأعلى الصفحة"
         style="display: none; position: fixed; bottom: 95px; right: 25px; z-index: 9999; border: none; outline: none; background-color: #0b5b73; color: white; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease; opacity: 0.85;">
         ▲
