@@ -1,5 +1,9 @@
-/* --- ملف التنسيق النهائي المطور والمدمج: style.css لمشروع الحديقة السرية --- */
+/* 🔒 سطر الحماية الإجباري لمنع المتصفحات من قسر الوضع الداكن (Force Dark Mode) */
+:root {
+    color-scheme: only light;
+}
 
+/* --- ملف التنسيق النهائي المطور والمدمج: style.css لمشروع الحديقة السرية --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -855,8 +859,9 @@ nav {
 
 /* تأثير حركي لزرار العودة لأعلى الصفحة */
 #backToTopBtn:hover {
-    background-color: #0b5b73 !important; /* يقلب للون الأزرق الغامق المتناسق مع الفوتر */
-    transform: scale(1.1); /* يكبر بنسبة بسيطة */
+    background-color: #0b5b73 !important;
+    /* يقلب للون الأزرق الغامق المتناسق مع الفوتر */
+    transform: scale(1.1);
+    /* يكبر بنسبة بسيطة */
     opacity: 1;
 }
-
