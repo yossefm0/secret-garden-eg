@@ -85,7 +85,7 @@
 
 
             <!-- بداية كارت منتج: هدية حجاب -->
-            <div class="product-card">
+            <div class="product-card" id="p-73">
 
                 <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
                 <div class="slider-wrapper">
@@ -126,7 +126,7 @@
             <!-- نهاية كارت منتج: هدية حجاب -->
 
             <!-- بداية كارت منتج: مادلية أذكار الصباح والمساء -->
-            <div class="product-card">
+            <div class="product-card" id="p-74">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
                 <div class="slider-wrapper">
@@ -161,7 +161,7 @@
             <!-- نهاية كارت منتج: مادلية أذكار الصباح والمساء -->
 
             <!-- بداية كارت منتج: مادلية أذكار -->
-            <div class="product-card">
+            <div class="product-card" id="p-75">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
                 <div class="slider-wrapper">
@@ -195,7 +195,7 @@
             <!-- نهاية كارت منتج: مادلية أذكار -->
 
             <!-- بداية كارت منتج: مسطرة بتصميم الحجاب -->
-            <div class="product-card">
+            <div class="product-card" id="p-76">
 
                 <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
                 <div class="slider-wrapper">
@@ -236,7 +236,7 @@
             <!-- نهاية كارت منتج: مسطرة بتصميم الحجاب -->
 
             <!-- بداية كارت منتج: مج بورسلين -->
-            <div class="product-card">
+            <div class="product-card" id="p-77">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
                 <div class="slider-wrapper">
@@ -271,7 +271,7 @@
             <!-- نهاية كارت منتج: مج بورسلين -->
 
             <!-- بداية كارت منتج: قلم جيل بكارت أنيق -->
-            <div class="product-card">
+            <div class="product-card" id="p-78">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
                 <div class="slider-wrapper">
@@ -306,7 +306,7 @@
             <!-- نهاية كارت منتج: قلم جيل بكارت أنيق -->
 
             <!-- بداية كارت منتج: قلم جوهره جيل -->
-            <div class="product-card">
+            <div class="product-card" id="p-79">
 
                 <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 2) -->
                 <div class="slider-wrapper">
@@ -347,7 +347,7 @@
             <!-- نهاية كارت منتج: قلم جوهره جيل -->
 
             <!-- بداية كارت منتج: هدية حجاب مميزة -->
-            <div class="product-card">
+            <div class="product-card" id="p-80">
 
                 <!-- 1. حاوية السلايدر (الأسهم وصور المنتج الـ 5) -->
                 <div class="slider-wrapper">
@@ -394,7 +394,7 @@
             <!-- نهاية كارت منتج: هدية حجاب مميزة -->
 
             <!-- بداية كارت منتج: نوت بوك مهام -->
-            <div class="product-card">
+            <div class="product-card" id="p-81">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
                 <div class="slider-wrapper">
@@ -429,7 +429,7 @@
             <!-- نهاية كارت منتج: نوت بوك مهام -->
 
             <!-- بداية كارت منتج: توت باج بتصميم الحجاب -->
-            <div class="product-card">
+            <div class="product-card" id="p-82">
 
                 <!-- 1. حاوية السلايدر (صورة واحدة فقط بدون أسهم للتناسق البصري) -->
                 <div class="slider-wrapper">
@@ -598,8 +598,23 @@
                 document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
             }
         });
+
+        // 🔗 6️⃣ سكريبت ربط روابط المنتجات المباشرة بأزرار الواتساب تلقائياً بالـ ID الرقمي التسلسلي
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.product-card').forEach(card => {
+                let productId = card.id; // بيلقط الـ id بتاع الكارت (زي p-1 أو p-2)
+                let currentUrl = window.location.href.split('#')[0]; // رابط الصفحة الحالية نقي بدون هاش قديم
+                let button = card.querySelector('.order-btn'); // بيمسك زرار اطلب الآن الخاص بالكارت ده
+
+                if (button && productId) {
+                    let exactProductUrl = `${currentUrl}#${productId}`;
+                    // بيسيب شفرتك القديمة المشفرة زي ما هي وبيلزق في آخرها الرابط المباشر للمنتج
+                    button.href += encodeURIComponent(`\n\n🔗 رابط المنتج المباشر:\n${exactProductUrl}`);
+                }
+            });
+        });
     </script>
-    <!-- زرار العودة لأعلى الصفحة (مترحل لليمين ومرفوع فوق الفوتر والواتساب) -->
+
     <button id="backToTopBtn" onclick="scrollToTop()" title="العودة لأعلى الصفحة"
         style="display: none; position: fixed; bottom: 95px; right: 25px; z-index: 9999; border: none; outline: none; background-color: #0b5b73; color: white; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease; opacity: 0.85;">
         ▲
