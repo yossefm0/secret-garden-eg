@@ -83,7 +83,7 @@
 
         <div class="product-container">
             <!-- بداية كارت منتج: كارت الاسوره بتصميم الكارت باسم الطالب -->
-            <div class="product-card">
+            <div class="product-card" id="p-128">
 
                 <!-- 1. حاوية السلايدر (3 صور) -->
                 <div class="slider-wrapper">
@@ -123,7 +123,7 @@
             </div>
             <!-- نهاية كارت منتج: كارت الاسوره بتصميم الكارت باسم الطالب -->
             <!-- بداية كارت منتج: ميني بابلز -->
-            <div class="product-card">
+            <div class="product-card" id="p-129">
 
                 <!-- 1. حاوية السلايدر (صورتين) -->
                 <div class="slider-wrapper">
@@ -161,7 +161,7 @@
             </div>
             <!-- نهاية كارت منتج: ميني بابلز -->
             <!-- بداية كارت منتج: كارت قلم سنون -->
-            <div class="product-card">
+            <div class="product-card" id="p-"130>
 
                 <!-- 1. حاوية السلايدر (6 صور) -->
                 <div class="slider-wrapper">
@@ -207,7 +207,7 @@
             </div>
             <!-- نهاية كارت منتج: كارت قلم سنون -->
             <!-- بداية كارت منتج: كارت السياره -->
-            <div class="product-card">
+            <div class="product-card" id="p-131">
 
                 <!-- 1. حاوية السلايدر (3 صور) -->
                 <div class="slider-wrapper">
@@ -253,7 +253,7 @@
             </div>
             <!-- نهاية كارت منتج: كارت السياره -->
             <!-- بداية كارت منتج: بالون بعصايه -->
-            <div class="product-card">
+            <div class="product-card" id="p-132">
 
                 <!-- 1. حاوية السلايدر (4 صور) -->
                 <div class="slider-wrapper">
@@ -295,7 +295,7 @@
             </div>
             <!-- نهاية كارت منتج: بالون بعصايه -->
             <!-- بداية كارت منتج: كارت الشيكولاته -->
-            <div class="product-card">
+            <div class="product-card" id="p-133">
 
                 <!-- 1. حاوية السلايدر (4 صور) -->
                 <div class="slider-wrapper">
@@ -468,8 +468,23 @@
                 document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
             }
         });
+
+        // 🔗 6️⃣ سكريبت ربط روابط المنتجات المباشرة بأزرار الواتساب تلقائياً بالـ ID الرقمي التسلسلي
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.product-card').forEach(card => {
+                let productId = card.id; // بيلقط الـ id بتاع الكارت (زي p-1 أو p-2)
+                let currentUrl = window.location.href.split('#')[0]; // رابط الصفحة الحالية نقي بدون هاش قديم
+                let button = card.querySelector('.order-btn'); // بيمسك زرار اطلب الآن الخاص بالكارت ده
+
+                if (button && productId) {
+                    let exactProductUrl = `${currentUrl}#${productId}`;
+                    // بيسيب شفرتك القديمة المشفرة زي ما هي وبيلزق في آخرها الرابط المباشر للمنتج
+                    button.href += encodeURIComponent(`\n\n🔗 رابط المنتج المباشر:\n${exactProductUrl}`);
+                }
+            });
+        });
     </script>
-    <!-- زرار العودة لأعلى الصفحة (مترحل لليمين ومرفوع فوق الفوتر والواتساب) -->
+
     <button id="backToTopBtn" onclick="scrollToTop()" title="العودة لأعلى الصفحة"
         style="display: none; position: fixed; bottom: 95px; right: 25px; z-index: 9999; border: none; outline: none; background-color: #0b5b73; color: white; cursor: pointer; width: 45px; height: 45px; border-radius: 50%; font-size: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease; opacity: 0.85;">
         ▲
